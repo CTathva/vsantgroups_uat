@@ -812,7 +812,7 @@ RESPONSIVE
   .ham{
     z-index: 100;
     filter: invert(1);
-    width: 5.5%;
+    width: 6%;
     margin-top: -5%;
     margin-left: 12%;
     float: right;
@@ -875,7 +875,7 @@ RESPONSIVE
   .content{
     position: relative;
     width: 100%;
-    margin-top: -18%;
+    margin-top: -19%;
     height: auto;
   }
   .slideshow-container {
@@ -884,29 +884,27 @@ RESPONSIVE
     margin: auto;
   }
   .mySlides {
-    display: none;
+    display: block;
   }
-  .mySlides img{
-    filter: brightness(50%);
-  }
+ 
   .mySlides .mobile{
     display: block;
+    filter: brightness(50%);
   }
   .mySlides .pc{
     display: none;
   }
   .cap {
     color: #fff;
-    font-size: 400%;
-    margin: 15% 0 0 10%;
+    font-size: 250%;
+    margin: 20% 10% 0 10%;
     position: absolute;
-    top: 8px;
     width: auto;
   }
   .tag {
     color: #fff;
-    font-size: 150%;
-    margin: 27% 0 0 10%;
+    font-size: 120%;
+    margin: 80% 0 0 10%;
     position: absolute;
     top: 8px;
     width: auto;
@@ -916,16 +914,16 @@ RESPONSIVE
     color: #142230;
     background-color: #fff;
     border: #fff 1px solid;
-    padding: 1% 3% 1% 3%;
+    padding: 2% 3% 2% 3%;
     position: absolute;
     top: 8px;
     text-align: center;
-    margin: 35% 0 0 10%;
+    margin: 100% 0 0 10%;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 80%;
     letter-spacing: 2px;
     width: auto;
-    font-size: 100%;
   }
   
   .butt:hover{

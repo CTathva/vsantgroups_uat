@@ -30,6 +30,7 @@ body{
   z-index: 500;
   display: flex;
   height: 90px;
+  cursor: pointer;
   margin-left: -3%;
   transform: skew(-30deg);
   background: white;
@@ -819,6 +820,7 @@ RESPONSIVE
     box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
     z-index: 500;
     display: flex;
+    cursor: pointer;
     height: 65px;
     margin-top: -10px;
     margin-left: -13%;
@@ -1230,35 +1232,40 @@ RESPONSIVE
   .snapshots{
     width: 100%;
     padding: 2%;
+    position: relative;
     background-color: #142230;
-    height: auto;
   }
   
   .snapshots h1{
     color: #fff;
     margin-left: 2%;
+    margin-bottom: -6%;
     font-size: 150%;
   }
   
   .snapshots .marker{
-    width: 6%;
-    height: 6px;
-    margin: 1% 0 2% 2%;
+    width: 20%;
+    height: 5px;
+    margin: 5% 0 5% 2%;
     padding: none;
     background-color: #fff;
     color: #fff;
   }
   
   .snapshots-layout{
-    width: 100%;
-    display: grid;
+    width: 85%;
+    margin: -2% auto 0% auto;
+    display: block;
+    padding-bottom: 10%;
+    clear: both;
+    height: auto;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2%;
   }
   
   .snap-card{
     padding: 1%;
     height: 100%;
+    margin-top: 6%;
     border-radius: 5%;
     text-align: center;
     background-color: #334257;
@@ -1281,7 +1288,7 @@ RESPONSIVE
     font-size: 85%;
   }
   .snap-card img{
-    width: 40%;
+    width: 35%;
     margin: 5%;
     border-radius: 50%;
     border: 2px #fff solid;
@@ -1291,11 +1298,14 @@ RESPONSIVE
   .tabcont{
     display: grid;
     gap: 5%;
-    grid-template-areas:'text grid';
+    position: relative;
+    grid-template-areas:'text'
+                        'grid';
   }
   
   .text{
-    width: 120%;
+    width: 100%;
+    text-align: center;
     grid-area: text;
   }
   .grid{
@@ -1305,17 +1315,17 @@ RESPONSIVE
   
   .text h3{
     font-size: 150%;
-    padding: 1% 2% 2% 10%;
+    padding: 1% 2% 2% 2%;
     color: gray;
   }
   .text h1{
     font-size: 250%;
     font-weight: lighter;
-    padding: 1% 2% 2% 10%;
+    padding: 1% 2% 2% 2%;
     color: #142230;
   }
   .text .marker{
-    width: 15%;
+    width: 20%;
     height: 6px;
     margin: 10% 0 0 10%;
     padding: none;
@@ -1340,7 +1350,6 @@ RESPONSIVE
     color: #fff;
     transition: 0.3s;
     width: 50%;
-    margin: 5% 2% 1% 10%;
   }
   
   .text button:hover{
@@ -1349,18 +1358,14 @@ RESPONSIVE
     color: #fff;
   }
   
-  .tabcont .grid{
-    width: 100%;
-    grid-area: grid;
-  }
   
   .tabgrid{
     display: grid;
-    width: 80%;
-    margin: 3% auto;
+    width: 90%;
+    margin: -3% auto 20% auto;
     background-color: #fff;
     text-align: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   
   }
   
@@ -1376,9 +1381,13 @@ RESPONSIVE
     width: 20%;
     filter: invert(21%) sepia(95%) saturate(1238%) hue-rotate(190deg) brightness(94%) contrast(94%);
   }
+  .tabcard h2{
+    font-size: 90%;
+  }
   
   .tabcard p{
     line-height: 200%;
+    font-size: 70%;
   }
   
   
@@ -1414,39 +1423,40 @@ RESPONSIVE
   .footer-identity{
     text-align: left;
     display: flex;
-    width: 120%;
-    height: 100px;
+    width: 100%;
+    padding: 4%;
+    height: 70px;
     justify-content: center;
     grid-area: identity;
   }
   .footer-logo{
-    height: 70px;
+    height: 60px;
     cursor: pointer;
   }
   .footer-heading{
     color:white;
     text-align: left;
-    font-size: 125%;
+    font-size: 90%;
   }
   .footer-companies{
-    text-align: left;
     grid-area: companies;
+    margin: 10% 0 0 5%;
   }
   .footer-useful-links{
-    text-align: left;
     grid-area: usefullinks;
+    margin: 10% 0 0 5%;
   }
   .footer-address{
-    text-align: left;
     grid-area: address;
+    margin: 10% 0 0 5%;
   }
   .list{
-    margin-bottom: 8%;
+    margin-bottom: 5%;
   }
   .footer-list{
     color:#999;
+    font-size: 90%;
     transition: 0.3s;
-    text-align: left;
   }
   .footer-list i{
     transform: rotateY(180deg);
@@ -1462,29 +1472,28 @@ RESPONSIVE
   }
   .footer-social  *{
     display: inline-block;
+    font-size: 90%;
   }
   .grid_layout {
-    display: grid;
-    gap: 10%;
-    grid-template-areas:'identity companies usefullinks address';
+    display: block;
   }
   .footer-bottom{
-    display: grid;
-    height: 60px;
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
     margin: 3% 0 -2% 0;
     padding: 10px 0 10px 0;
-    grid-template-columns: repeat(4, 1fr);
   }
   .groups{
     display: flex;
     cursor: pointer;
-    width: 75%;
+    width: 100%;
     justify-content: center;
   }
   .arrow{
     border: #999 1px solid;
     width: 40px;
-    right: 0;
     cursor: pointer;
     border-radius: 50%;
     border-color: #142230;
@@ -1493,20 +1502,21 @@ RESPONSIVE
     transition: 0.3s;
     line-height: 40px;
     font-weight: bold;
+    float: right;
+    margin-top: -15%;
     font-size: 150%;
-    margin-left: 80%;
   }
   .arrow:hover{
     background-color: #eee;
   }
   .term-priv{
-    display: flex;
-    width: 175%;
+    display: block;
+    width: 100%;
     justify-content: center;
   }
   .groups h1{
     line-height: 40px;
-    margin-left: 10%;
+    margin-left: 0;
     color: #53BDED;
   }
   .footer-social-list{
@@ -1520,16 +1530,13 @@ RESPONSIVE
     cursor: pointer;
   }
   .copyright{
-    font-size: 85%;
+    font-size: 75%;
     line-height: 40px;
     color:#999;
   }
-  .gap{
-    width: 50px;
-  }
   .terms{
-    font-size: 85%;
-    line-height: 40px;
+    font-size: 75%;
+    line-height: 30px;
     transition: 0.3s;
     color:#999;
   }

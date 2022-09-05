@@ -807,7 +807,7 @@ RESPONSIVE
     align-items: center;
   }
   .ham{
-    z-index: 100;
+    z-index: 300;
     filter: invert(1);
     width: 6.5%;
     margin-top: -5%;
@@ -858,17 +858,37 @@ RESPONSIVE
   
   .responsive-menu{
     display: none;
+    float: left;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    margin-top: -20%;
+    background-color: white;
+    padding: 22% 0% 5% 10%;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    border-bottom: 1px solid #53BDED;
   }
-  @keyframes growDown {
-    0% {
-        transform: scaleY(0)
-    }
-    80% {
-        transform: scaleY(1.1)
-    }
-    100% {
-        transform: scaleY(1)
-    }
+
+  .responsive-menu .active{
+    border-bottom: 1px solid #53BDED;
+  }
+
+  .responsive-list{
+    margin-bottom: 20%;
+  }
+  .responsive-menu-list{
+    color:#142230;
+    transition: 0.3s;
+  }
+
+  .responsive-menu-list:hover{
+    color: #0f4d92;
+    cursor: default;
+  }
+
+  .responsive-menu-active{
+    color: #0f4d92;
   }
   .content{
     position: relative;
@@ -1347,14 +1367,11 @@ RESPONSIVE
   .tabcard{
     width: 100%;
     border: 0.1px #eee solid;
-    cursor: pointer;
     padding: 20% 0 20% 0;
     transition: 0.3s;
     height: auto;
   }
-  .tabcard:hover{
-    background-color: #eee;
-  }
+
   .tabcard img{
     width: 20%;
     filter: invert(21%) sepia(95%) saturate(1238%) hue-rotate(190deg) brightness(94%) contrast(94%);

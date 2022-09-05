@@ -1,40 +1,19 @@
 function myFunction() {
-  var btn = document.getElementById('responsive-menu'); 
+  var btn = document.getElementById('responsive-menu');
+  var menu = document.getElementById('menu');
   const display = window.getComputedStyle(btn).display; 
   if (display === "flex"){
     btn.style.display = 'none';
+    menu.style.filter = 'invert(1)';
+    menu.style.width ='6.5%';
+    menu.setAttribute("src", 'assets/image/logos/more.png');
   }
   else{
     btn.style.display = 'flex';
+    menu.style.filter = 'invert(0)';
+    menu.style.width ='5%';
+    menu.setAttribute("src", 'assets/image/logos/close.png');
   }
-}
-
-function displaycompany() {
-  
-  var companies = document.getElementById('companiesmenu'); 
-  const display1 = window.getComputedStyle(companies).display; 
-  if (display1 === "flex"){
-    companies.style.display = 'none';
-  }
-  else{
-    companies.style.display = 'flex';
-  }
-}
-
-function darkmode() {
-  var dark = document.getElementById('darkmode');
-  var text = dark.innerHTML;
-  const container = document.querySelectorAll(".header, .heading, .menu-items,.responsive-menu-list,.responsive-menu, p, body, .horizontal,.icon,.header-identity,.companies,.tagline,.companies-menu-list,.menu-items-active");
-
-  if (text === 'Turn On Dark Mode'){
-    dark.innerHTML='Turn On Light Mode';
-    container.forEach(x => x.classList.toggle('dark'));
-  }
-  else{
-    dark.innerHTML='Turn On Dark Mode';
-    container.forEach(x => x.classList.toggle('dark'));
-  }
-
 }
 
 let slideIndex = 1;
@@ -88,12 +67,6 @@ window.onload = function(){
              hideMe.style.display = 'none';
           }
        };
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      var dark = document.getElementById('darkmode');
-      const container = document.querySelectorAll(".header, .heading, .menu-items,.responsive-menu-list,.responsive-menu, p, body, .horizontal,.icon,.header-identity,.companies,.tagline,.companies-menu-list,.menu-items-active");
-        dark.innerHTML='Turn On Light Mode';
-        container.forEach(x => x.classList.toggle('dark'));
-    }
 }
 
 function changeAbout(n){

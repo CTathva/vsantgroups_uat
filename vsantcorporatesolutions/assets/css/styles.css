@@ -802,6 +802,7 @@ RESPONSIVE
     margin-top: -5%;
     margin-left: 12%;
     float: right;
+    display: block;
   }
   .header-identity {
     width: 90%;

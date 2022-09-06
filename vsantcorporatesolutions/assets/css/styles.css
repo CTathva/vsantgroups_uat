@@ -985,7 +985,7 @@ RESPONSIVE
     height: 100%;
     background-color: rgba(0,0,255,0.1);
   }
-  .active, .dot:hover {
+  .active {
     background-color: #fff;
   }
   .fade {

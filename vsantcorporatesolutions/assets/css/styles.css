@@ -21,8 +21,7 @@ body{
   align-items: center;
 }
 .ham{
-  z-index: 100;
-  width: 2%;  
+  display: none;
 }
 .header-identity {
   width: 34%;
@@ -64,7 +63,7 @@ body{
 }
 .horizontal{
   overflow: hidden;
-  width: 45%;
+  width: 55%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transform: skew(-30deg);
   margin-top: -3%;
@@ -85,9 +84,8 @@ body{
 .menu-items{
   color: #fff;
   cursor: pointer;
-  width: 135px;
+  width: 125px;
   font-weight: bold;
-  padding-top: 1%;
   transition: 0.3s;
   letter-spacing: 1px;
   text-align: center;
@@ -96,37 +94,14 @@ body{
 .menu-items:hover{
   color: #53BDED;
 }
-
-.companies{
-  display: none;
-  width: 22.2%;
-  position: absolute;
-  z-index: 200;
-  right: 0;
-  margin-right: 6%;
-  margin-top: -2.3%;
-  background-color: #eee;
-  padding: 1% 0% 0% 1%;
-  animation: growDown 300ms ease-in-out forwards;
-  transform-origin: top center;
-  border-bottom: 1px solid #53BDED;
-}
-
-.companies-list{
-  margin-bottom: 10%;
-}
-.companies-menu-list{
-  color:#000;
-  font-weight: bold;
-}
-
-.companies-menu-list.dark{
-  color:#eee;
-}
-
-.companies-menu-list:hover{
+.menu-items-active{
   color: #53BDED;
-  cursor: default;
+  cursor: pointer;
+  width: 125px;
+  font-weight: bold;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .responsive-menu{
@@ -256,57 +231,101 @@ body{
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+
 .getin{
   width: 100%;
   padding: 2%;
   margin-top: -0.5%;
   background-color: #fff;
 }
-
-.getin p{
+.getin-cont{
+  display: grid;
+  width: 100%;
+  margin: 3% auto;
+  background-color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+}
+.getin-img{
+  width: 60%;
+  margin-left: 30%;
+}
+.getin-text{
+  width: 170%;
+}
+.getin-text p{
   color: #142230;
   margin: 2% 0 2% 10%;
   font-size: 150%;
 }
-
-.getin h1{
+.getin-text h1{
   color: #142230;
   margin: 2% 0 2% 10%;
   font-size: 200%;
 }
-
-.getin button{
+.getin-text button{
   color: #fff;
   background-color: #142230;
   border: #142230 2px solid;
   margin: 2% 0 2% 10%;
-  padding: 1.5%;
+  padding: 1.7%;
   border-radius: 5px;
   transition: 0.3s;
   font-weight: bold;
-  width: 20%;
+  width: 23%;
 }
-
-.getin button:hover{
+.getin-text button:hover{
   color: #fff;
   background-color: #334257;
   border: #334257 2px solid;
   cursor: pointer;
 }
-.getin img{
-  float: right;
-  position: absolute;
-  right: 0;
-  margin: -8% 10% 10% 0;
-  width: 25%;
+.getin-img img{
+  width: 100%;
 }
-.getin .marker{
-  width: 6%;
+.getin-text .marker{
+  width: 7%;
   height: 6px;
   margin: 1% 0 0 10%;
   padding: none;
   background-color: #0f4d92;
   color: #0f4d92;
+}
+
+
+
+.home-layout {
+  display: grid;
+  background-color: #142230;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2%;
+}
+
+.home-layout .marker{
+  width: 12%;
+  height: 6px;
+  margin: 1% 0 5% 10%;
+  padding: none;
+  background-color: #fff;
+  color: #fff;
+}
+
+
+
+.home-layout img{
+  margin: 4% 10% 4% 20%;
+  width: 60%;
+}
+.home-layout p{
+  margin: 2% 0 2% 10%;
+  font-size: 150%;
+  color: #fff;
+}
+.home-layout h1{
+  color: #fff;
+  font-weight: bold;
+  margin: 2% 0 2% 10%;
+  font-size: 200%;
 }
 .stratergy{
   width: 100%;
@@ -314,7 +333,6 @@ body{
   height: auto;
   padding: 2%;
 }
-
 .pointer-right {
   width: 200px;
   height: 40px;
@@ -325,7 +343,6 @@ body{
   position: relative;
   background: #fff;
 }
-
 .pointer-right:after {
   content: "";
   position: absolute;
@@ -393,94 +410,71 @@ body{
   border-bottom: 20px solid transparent;
 }
 
+
+
+
+
+
 .whatwedo{
   width: 100%;
   padding: 2%;
   margin-top: -0.5%;
 }
-
-.whatwedo p{
+.whatwedo-cont{
+  display: grid;
+  width: 100%;
+  margin: 3% auto;
+  background-color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+}
+.whatwedo-img{
+  width: 50%;
+  margin-left: 30%;
+}
+.whatwedo-text{
+  width: 170%;
+}
+.whatwedo-text p{
   color: #142230;
   margin: 0 0 2% 10%;
   font-size: 120%;
 }
-
-.whatwedo h1{
+.whatwedo-text h1{
   color: #142230;
   margin: 2% 0 0% 10%;
   font-size: 200%;
 }
-
-.whatwedo .marker{
-  width: 6%;
+.whatwedo-text .marker{
+  width: 7%;
   height: 6px;
-  margin: 1% 0 0% 10%;
+  margin: 1% 0 0 10%;
   padding: none;
   background-color: #0f4d92;
   color: #0f4d92;
 }
-
-.whatwedo button{
+.whatwedo-text button{
   color: #fff;
   background-color: #142230;
   border: #142230 2px solid;
   margin: 2% 0 2% 10%;
-  padding: 1.5%;
+  padding: 1.7%;
   border-radius: 5px;
   transition: 0.3s;
   font-weight: bold;
-  width: 20%;
+  width: 23%;
 }
-
-.whatwedo button:hover{
+.whatwedo-text button:hover{
   color: #fff;
   background-color: #334257;
   border: #334257 2px solid;
   cursor: pointer;
 }
-.whatwedo img{
-  float: right;
-  position: absolute;
-  right: 0;
-  margin: -15% 10% 10% 0;
-  width: 25%;
+.whatwedo-img img{
+  width: 100%;
 }
 
-.home-layout {
-  display: grid;
-  background-color: #142230;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2%;
-}
 
-.home-layout .marker{
-  width: 12%;
-  height: 6px;
-  margin: 1% 0 5% 10%;
-  padding: none;
-  background-color: #fff;
-  color: #fff;
-}
 
-.home-layout img{
-  margin: 4% 10% 4% 20%;
-  width: 60%;
-
-}
-
-.home-layout p{
-  margin: 2% 0 2% 10%;
-  font-size: 150%;
-  color: #fff;
-
-}
-
-.home-layout h1{
-  color: #fff;
-  font-weight: bold;
-  margin: 2% 0 2% 10%;
-  font-size: 200%;
-}
 
 .snapshots{
   width: 100%;
@@ -488,13 +482,11 @@ body{
   background-color: #142230;
   height: auto;
 }
-
 .snapshots h1{
   color: #fff;
   margin-left: 2%;
   font-size: 150%;
 }
-
 .snapshots .marker{
   width: 6%;
   height: 6px;
@@ -503,14 +495,12 @@ body{
   background-color: #fff;
   color: #fff;
 }
-
 .snapshots-layout{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2%;
 }
-
 .snap-card{
   padding: 1%;
   height: 100%;
@@ -522,13 +512,11 @@ body{
   color: #fff;
   font-weight: bold;
 }
-
 .snap-card h6{
   color: #bbb;
   font-weight: 100;
   font-size: 75%;
 }
-
 .snap-card p{
   color: #ccc;
   padding: 3%;
@@ -1006,51 +994,54 @@ RESPONSIVE
   .getin{
     width: 100%;
     padding: 2%;
-    margin-top: -0.5%;
     background-color: #fff;
   }
-  
-  .getin p{
+  .getin-cont{
+    display: block;
+    width: 100%;
+    margin: 3% auto;
+  }
+  .getin-img{
+    display: none;
+  }
+  .getin-text{
+    width: 100%;
+  }
+  .getin-text p{
     color: #142230;
     margin: 2% 0 2% 10%;
     font-size: 150%;
   }
   
-  .getin h1{
+  .getin-text h1{
     color: #142230;
     margin: 2% 0 2% 10%;
     font-size: 200%;
   }
   
-  .getin button{
+  .getin-text button{
     color: #fff;
     background-color: #142230;
     border: #142230 2px solid;
-    margin: 2% 0 2% 10%;
-    padding: 1.5%;
+    margin: 5% 0 2% 10%;
+    padding: 2.5%;
     border-radius: 5px;
     transition: 0.3s;
     font-weight: bold;
-    width: 20%;
+    width: 40%;
   }
   
-  .getin button:hover{
+  .getin-text button:hover{
     color: #fff;
     background-color: #334257;
     border: #334257 2px solid;
     cursor: pointer;
   }
-  .getin img{
-    float: right;
-    position: absolute;
-    right: 0;
-    margin: -8% 10% 10% 0;
-    width: 25%;
-  }
-  .getin .marker{
-    width: 6%;
+
+  .getin-text .marker{
+    width: 20%;
     height: 6px;
-    margin: 1% 0 0 10%;
+    margin: 10% 0 7% 10%;
     padding: none;
     background-color: #0f4d92;
     color: #0f4d92;
@@ -1063,9 +1054,9 @@ RESPONSIVE
   }
   
   .pointer-right {
-    width: 200px;
+    width: 85%;
     height: 40px;
-    margin: 1.5% 0% 1.5% 10%;
+    margin: 4% 0% 4% 10%;
     display: flex;
     right: 0;
     justify-content: center;
@@ -1102,13 +1093,12 @@ RESPONSIVE
   .pointer-cont{
     width: auto;
     color: #142230;
-    margin: -2% 10% 4% 20%;
+    margin: -2% 10% 4% 10%;
   }
   .pointer {
-    width: 200px;
+    width: 85%;
     height: 40px;
     display: flex;
-    margin: 1.5%;
     justify-content: center;
     position: relative;
     background: #fff;
@@ -1124,9 +1114,9 @@ RESPONSIVE
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 20px solid #142230;
+    /* border-left: 20px solid #142230;
     border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    border-bottom: 20px solid transparent; */
   }
   .pointer:before {
     content: "";
@@ -1145,65 +1135,70 @@ RESPONSIVE
     padding: 2%;
     margin-top: -0.5%;
   }
+  .whatwedo-cont{
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+  .whatwedo-img{
+    display: none;
+  }
+  .whatwedo-text{
+    width: 100%;
+  }
   
-  .whatwedo p{
+  .whatwedo-text p{
     color: #142230;
     margin: 0 0 2% 10%;
     font-size: 120%;
   }
   
-  .whatwedo h1{
+  .whatwedo-text h1{
     color: #142230;
     margin: 2% 0 0% 10%;
     font-size: 200%;
   }
   
-  .whatwedo .marker{
-    width: 6%;
+  .whatwedo-text .marker{
+    width: 20%;
     height: 6px;
-    margin: 1% 0 0% 10%;
+    margin: 10% 0 7% 10%;
     padding: none;
     background-color: #0f4d92;
     color: #0f4d92;
   }
   
-  .whatwedo button{
+  .whatwedo-text button{
     color: #fff;
     background-color: #142230;
     border: #142230 2px solid;
-    margin: 2% 0 2% 10%;
-    padding: 1.5%;
+    margin: 5% 0 2% 10%;
+    padding: 2.5%;
     border-radius: 5px;
     transition: 0.3s;
     font-weight: bold;
-    width: 20%;
+    width: 40%;
   }
   
-  .whatwedo button:hover{
+  .whatwedo-text button:hover{
     color: #fff;
     background-color: #334257;
     border: #334257 2px solid;
     cursor: pointer;
   }
-  .whatwedo img{
-    float: right;
-    position: absolute;
-    right: 0;
-    margin: -15% 10% 10% 0;
-    width: 25%;
-  }
   
   .home-layout {
-    display: grid;
+    display: block;
     background-color: #142230;
-    grid-template-columns: repeat(2, 1fr);
     padding: 2%;
   }
-  
+  .home-layout img{
+    display: none;
+  }
   .home-layout .marker{
-    width: 12%;
+    width: 20%;
     height: 6px;
-    margin: 1% 0 5% 10%;
+    margin: 10% 0 7% 10%;
     padding: none;
     background-color: #fff;
     color: #fff;
@@ -1238,22 +1233,21 @@ RESPONSIVE
   
   .snapshots h1{
     color: #fff;
-    margin-left: 2%;
-    margin-bottom: -6%;
+    margin: 10% 0 -6% 10%;
     font-size: 150%;
   }
   
   .snapshots .marker{
     width: 20%;
-    height: 5px;
-    margin: 5% 0 5% 2%;
+    height: 6px;
+    margin: 10% 0 4% 10%;
     padding: none;
     background-color: #fff;
     color: #fff;
   }
   
   .snapshots-layout{
-    width: 85%;
+    width: 80%;
     margin: -2% auto 0% auto;
     display: block;
     padding-bottom: 10%;
@@ -1265,7 +1259,7 @@ RESPONSIVE
   .snap-card{
     padding: 1%;
     height: 100%;
-    margin-top: 6%;
+    margin-top: 10%;
     border-radius: 5%;
     text-align: center;
     background-color: #334257;
@@ -1345,6 +1339,7 @@ RESPONSIVE
     padding: 4%;
     font-weight: bold;
     cursor: pointer;
+    margin: 10% auto;
     border-radius: 5px;
     border: 1px solid #142230;
     color: #fff;
@@ -1382,12 +1377,12 @@ RESPONSIVE
     filter: invert(21%) sepia(95%) saturate(1238%) hue-rotate(190deg) brightness(94%) contrast(94%);
   }
   .tabcard h2{
-    font-size: 90%;
+    font-size: 80%;
   }
   
   .tabcard p{
     line-height: 200%;
-    font-size: 70%;
+    font-size: 60%;
   }
   
   

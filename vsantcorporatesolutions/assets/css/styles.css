@@ -1048,7 +1048,7 @@ RESPONSIVE
     color: #fff;
     background-color: #142230;
     border: #142230 2px solid;
-    margin: 5% 0 2% 10%;
+    margin: 5% 0 5% 10%;
     padding: 2.5%;
     transition: 0.3s;
     font-weight: bold;
@@ -1196,7 +1196,7 @@ RESPONSIVE
     color: #fff;
     background-color: #142230;
     border: #142230 2px solid;
-    margin: 5% 0 2% 10%;
+    margin: 5% 0 5% 10%;
     padding: 2.5%;
     transition: 0.3s;
     font-weight: bold;
@@ -1271,7 +1271,7 @@ RESPONSIVE
     width: 80%;
     margin: -2% auto 0% auto;
     display: block;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     clear: both;
     height: auto;
     grid-template-columns: repeat(1, 1fr);
@@ -1328,7 +1328,7 @@ RESPONSIVE
     border-radius: 3px 0 0 3px;
   }
   .snap-prev {
-    margin-left: -1%;
+    margin-left: -2%;
   }
 
   .snap-dot {
@@ -1344,7 +1344,7 @@ RESPONSIVE
   .snap-dot-container{
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 30px;
     margin: 0 auto;
     width: 96%;
     display: block;

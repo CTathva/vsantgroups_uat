@@ -473,7 +473,13 @@ body{
 
 
 
+.snap-prev, .snap-next {
+ display: none;
+}
 
+.snap-dot-container{
+  display: none;
+}
 .snapshots{
   width: 100%;
   padding: 2%;
@@ -528,18 +534,18 @@ body{
   border: 2px #fff solid;
 }
 
-
 .tabcont{
   display: grid;
   gap: 5%;
+  position: relative;
   grid-template-areas:'text grid';
 }
 
-.text{
+.tabcont .text{
   width: 120%;
   grid-area: text;
 }
-.grid{
+.tabcont  .grid{
   width: 100%;
   grid-area: grid;
 }
@@ -1280,6 +1286,47 @@ RESPONSIVE
     margin: 5%;
     border-radius: 50%;
     border: 2px #fff solid;
+  }
+  .snap-prev, .snap-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #bbb;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .snap-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .snap-dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 0.5% 0 0.5%;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .snap-dot-container{
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .active {
+    background-color: #fff;
   }
   
   

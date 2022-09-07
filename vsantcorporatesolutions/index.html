@@ -20,6 +20,7 @@
 
 <body>
 
+  <!-- HEADER -->
 
   <div class="header" id="header">
       <div class="header-identity" onclick="window.location.href='index.html'">
@@ -40,6 +41,8 @@
 
   </div>
 
+  <!-- RESPONSIVE MENU -->
+
   <div class="responsive-menu" id="responsive-menu">
     <ul>
       <li class="responsive-list"><a href="#" class="responsive-menu-active">Home</a></li>
@@ -50,6 +53,7 @@
     </ul>
   </div>
 
+  <!-- CONTENT -->
 
   <div class="content">
     
@@ -131,7 +135,7 @@
       </div>
     </div>
 
-    <div class="whatwedo">
+    <div class="whatwedo" id="whatwedo">
       <div class="whatwedo-cont">
         <div class="whatwedo-text">
           <h2 class="marker"></h2>
@@ -191,11 +195,23 @@
           <p><i class="fab fa fa-quote-left"></i>
           <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sequi libero numquam esse deleniti laborum quod, sint neque sit animi suscipit, quidem, saepe tempore. Vero neque explicabo pariatur atque sint.</p><br>
         </div>
+
       </div>
+
+       <a class="snap-prev" onclick="snapplusSlides(-1)">&#10094;</a>
+       <a class="snap-next" onclick="snapplusSlides(1)">&#10095;</a>
+ 
+       <div class="snap-dot-container">
+         <span class="snap-dot"></span>
+         <span class="snap-dot"></span>
+         <span class="snap-dot"></span>
+         <span class="snap-dot"></span>
+         <span class="snap-dot"></span>
+       </div>
 
     </div>
 
-    <div class="tabcont">
+    <div class="tabcont" id="tabcont">
       
       <div class="text">
         <h4 class="marker"></h4><br><h3><small>WE ARE VSANT</small></h3>
@@ -242,6 +258,8 @@
     
   </div>
   
+  <!-- FOOTER -->
+
   <div class="footer">
 
     <div class="grid_layout">

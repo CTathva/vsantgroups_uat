@@ -999,7 +999,7 @@ RESPONSIVE
   .dot-container{
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     width: 100%;
     text-align: center;
   }

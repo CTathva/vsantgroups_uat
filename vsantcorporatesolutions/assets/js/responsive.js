@@ -1,22 +1,39 @@
 let slideIndex = 1;
 let snapslideIndex = 1;
 
-function myFunction() {
+function myFunction(a) {
   var btn = document.getElementById('responsive-menu');
   var menu = document.getElementById('menu');
   const display = window.getComputedStyle(btn).display; 
-  if (display === "flex"){
-    btn.style.display = 'none';
-    menu.style.filter = 'invert(1)';
-    menu.style.width ='6.5%';
-    menu.setAttribute("src", 'assets/image/logos/more.png');
+  if (a==='home'){
+    if (display === "flex"){
+      btn.style.display = 'none';
+      menu.style.filter = 'invert(1)';
+      menu.style.width ='6.5%';
+      menu.setAttribute("src", 'assets/image/logos/more.png');
+    }
+    else{
+      btn.style.display = 'flex';
+      menu.style.filter = 'invert(0)';
+      menu.style.width ='5%';
+      menu.setAttribute("src", 'assets/image/logos/close.png');
+    }
   }
   else{
-    btn.style.display = 'flex';
-    menu.style.filter = 'invert(0)';
-    menu.style.width ='5%';
-    menu.setAttribute("src", 'assets/image/logos/close.png');
+    if (display === "flex"){
+      btn.style.display = 'none';
+      menu.style.filter = 'invert(9%) sepia(15%) saturate(2214%) hue-rotate(168deg) brightness(92%) contrast(90%)';
+      menu.style.width ='6.5%';
+      menu.setAttribute("src", 'assets/image/logos/more.png');
+    }
+    else{
+      btn.style.display = 'flex';
+      menu.style.filter = 'invert(0)';
+      menu.style.width ='5%';
+      menu.setAttribute("src", 'assets/image/logos/close.png');
+    }
   }
+  
 }
 
 function plusSlides(n) {
@@ -90,6 +107,10 @@ window.onload = function(){
   });
   
   var el = document.getElementById("swipezone");
+  var el2 = document.getElementById("swipezone2");
+  var el3 = document.getElementById("swipezone3");
+  var el4 = document.getElementById("swipezone4");
+
   var head = document.getElementById('header');
   var getin = document.getElementById('getin');
   window.scrollTo(head.offsetLeft,head.offsetTop);
@@ -98,9 +119,59 @@ window.onload = function(){
       console.log('swiped left');
       showSlides(slideIndex += 1);
     }
-    if (swipedir==="click"){
-      var text = document.getElementsByClassName("mySlides");
-      window.location.href='services.html?type='+text[slideIndex-1].id;
+    if (swipedir==="right"){
+      console.log('swiped right');
+      showSlides(slideIndex -= 1);
+    }
+    if (swipedir==="up"){
+      console.log('swiped up');
+      window.scrollTo(getin.offsetLeft,getin.offsetTop);
+    }
+    if (swipedir==="down"){
+      console.log('swiped down');
+      window.scrollTo(head.offsetLeft,head.offsetTop);
+    }
+  });
+  swipedetect(el2, function(swipedir){
+    if (swipedir==="left"){
+      console.log('swiped left');
+      showSlides(slideIndex += 1);
+    }
+    if (swipedir==="right"){
+      console.log('swiped right');
+      showSlides(slideIndex -= 1);
+    }
+    if (swipedir==="up"){
+      console.log('swiped up');
+      window.scrollTo(getin.offsetLeft,getin.offsetTop);
+    }
+    if (swipedir==="down"){
+      console.log('swiped down');
+      window.scrollTo(head.offsetLeft,head.offsetTop);
+    }
+  });
+  swipedetect(el3, function(swipedir){
+    if (swipedir==="left"){
+      console.log('swiped left');
+      showSlides(slideIndex += 1);
+    }
+    if (swipedir==="right"){
+      console.log('swiped right');
+      showSlides(slideIndex -= 1);
+    }
+    if (swipedir==="up"){
+      console.log('swiped up');
+      window.scrollTo(getin.offsetLeft,getin.offsetTop);
+    }
+    if (swipedir==="down"){
+      console.log('swiped down');
+      window.scrollTo(head.offsetLeft,head.offsetTop);
+    }
+  });
+  swipedetect(el4, function(swipedir){
+    if (swipedir==="left"){
+      console.log('swiped left');
+      showSlides(slideIndex += 1);
     }
     if (swipedir==="right"){
       console.log('swiped right');
@@ -229,14 +300,6 @@ function swipedetect(el, callback){
           else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint ){ // 2nd condition for vertical swipe met
               swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
           }
-      }
-      else if (elapsedTime<100){
-        if (Math.abs(distX) < threshold){ // 2nd condition for horizontal swipe met
-          swipedir='click';
-        }
-      else if (Math.abs(distY) < threshold){ // 2nd condition for vertical swipe met
-        swipedir='click';
-      }
       }
       handleswipe(swipedir)
       e.preventDefault()

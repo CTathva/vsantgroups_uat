@@ -7,10 +7,10 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/contact_styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="assets/js/responsive.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -21,32 +21,36 @@
 <body>
 
 
-  <div class="header">
-      <div class="header-identity">
-        <img class="logo" src="assets/image/logo512.png" >
-        <h1 class="heading">VSANT</h1><br><h2 class="tagline">Corporate Solutions</h2>
-      </div>
-      
+  <div class="header" id="header">
+    <div class="header-identity" onclick="window.location.href='index.html'">
+      <img class="logo" src="assets/image/logo512.png" >
+      <h1 class="heading">VSANT</h1><br><h2 class="tagline">Corporate Solutions</h2>
+    </div>
+    
 
-      <div class="horizontal">
-        <a title="VSANT Corporate Solutions" href="index.html" class="menu-items">Home</a>
-        <a title="About VSANT Corporate Solutions" href="about.html" class="menu-items">About Us</a>
-        <a title="Services we offer"href="services.html" class="menu-items">Services</a>
-        <a title="A glipms of the picturesque" href="gallery.html" class="menu-items">Gallery</a>
-      </div>
+    <div class="horizontal">
+      <a title="VSANT Corporate Solutions" href="index.html" class="menu-items">Home</a>
+      <a title="About VSANT Corporate Solutions" href="about.html" class="menu-items">About Us</a>
+      <a title="Services we offer"href="services.html" class="menu-items">Services</a>
+      <a title="A glipms of the picturesque" href="gallery.html" class="menu-items">Gallery</a>
+      <a title="Get in touch with Us" href="contact.html" class="menu-items-active">Contact Us</a>
+    </div>
 
-  </div>
+    <img onclick="myFunction()" id="menu" class="ham-dark" src="assets/image/logos/more.png">
 
-  <div class="responsive-menu" id="responsive-menu">
-    <ul>
-      <li class="responsive-list"><a class="responsive-menu-active">Home</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">About Us</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">Services</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">Gallery</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">Contact Us</a></li>
-    </ul>
-  </div>
+</div>
 
+<!-- RESPONSIVE MENU -->
+
+<div class="responsive-menu" id="responsive-menu">
+  <ul>
+    <li class="responsive-list"><a href="index.html" class="responsive-menu-list">Home</a></li>
+    <li class="responsive-list"><a href="about.html" class="responsive-menu-list">About Us</a></li>
+    <li class="responsive-list"><a href="services.html" class="responsive-menu-list">Services</a></li>
+    <li class="responsive-list"><a href="gallery.html" class="responsive-menu-list">Gallery</a></li>
+    <li class="responsive-list"><a href="contact.html" class="responsive-menu-active">Contact Us</a></li>
+  </ul>
+</div>
   <div class="content">
     
     <div class="address">

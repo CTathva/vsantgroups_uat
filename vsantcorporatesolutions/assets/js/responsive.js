@@ -58,6 +58,8 @@ window.onload = function(){
     carousel();
   }); 
   var el = document.getElementById('swipezone');
+  var head = document.getElementById('header');
+  var getin = document.getElementById('getin');
   swipedetect(el, function(swipedir){
     // swipedir contains either "none", "left", "right", "top", or "down"
     if (swipedir==="left"){
@@ -65,6 +67,12 @@ window.onload = function(){
     }
     if (swipedir==="right"){
       showSlides(slideIndex -= 1);
+    }
+    if (swipedir==="top"){
+      window.scrollTo(getin.offsetLeft,getin.offsetTop);
+    }
+    if (swipedir==="down"){
+      window.scrollTo(head.offsetLeft,head.offsetTop);
     }
 });
   var hideMe = document.getElementById('companiesmenu');

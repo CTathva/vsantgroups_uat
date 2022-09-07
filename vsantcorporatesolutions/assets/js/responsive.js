@@ -231,7 +231,7 @@ function swipedetect(el, callback){
               swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
           }
       }
-      else if (elapsedTime<200){
+      else if (elapsedTime<100){
         if (Math.abs(distX) < threshold){ // 2nd condition for horizontal swipe met
           swipedir='click';
         }

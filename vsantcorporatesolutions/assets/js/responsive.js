@@ -77,7 +77,10 @@ function snapcarousel() {
 
 
 window.onload = function(){ 
+  var sli = document.getElementsByClassName("mySlides");
+  sli[slideIndex-1].style.display ='block';
   showSlides(1);
+
 
   let sleep = ms => {  
     return new Promise(resolve => setTimeout(resolve, ms));  
@@ -87,15 +90,9 @@ window.onload = function(){
   });
   
   var el = document.getElementById("swipezone");
-  // el.addEventListener('click',handleclick);
-  // function handleclick(){
-  //   var text = document.getElementsByClassName("mySlides");
-  //   console.log(text[slideIndex-1].id);
-  // }
-
   var head = document.getElementById('header');
   var getin = document.getElementById('getin');
-  
+  window.scrollTo(head.offsetLeft,head.offsetTop);
   swipedetect(el, function(swipedir){
     if (swipedir==="left"){
       console.log('swiped left');

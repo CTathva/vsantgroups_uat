@@ -89,28 +89,28 @@ window.onload = function(){
     snapsleep(10000).then(() => {  
       snapcarousel();
     }); 
-    var el1 = document.getElementById('snapshots');
-  var whatwedo = document.getElementById('whatwedo');
-  var tabcont = document.getElementById('tabcont');
-  swipedetect(el1, function(swipedir){
-    // swipedir contains either "none", "left", "right", "top", or "down"
-    if (swipedir==="left"){
-      console.log('swiped lest');
-      snapshowSlides(snapslideIndex += 1);
-    }
-    if (swipedir==="right"){
-      console.log('swiped right');
-      snapshowSlides(snapslideIndex -= 1);
-    }
-    if (swipedir==="up"){
-      console.log('swiped down');
-      window.scrollTo(tabcont.offsetLeft,tabcont.offsetTop);
-    }
-    if (swipedir==="down"){
-      console.log('swiped up');
-      window.scrollTo(whatwedo.offsetLeft,whatwedo.offsetTop);
-    }
-  });
+    var el1 = document.getElementById('snapshots-layout');
+    var whatwedo = document.getElementById('whatwedo');
+    var tabcont = document.getElementById('tabcont');
+    swipedetect(el1, function(swipedir){
+      // swipedir contains either "none", "left", "right", "top", or "down"
+      if (swipedir==="left"){
+        console.log('swiped lest');
+        snapshowSlides(snapslideIndex += 1);
+      }
+      if (swipedir==="right"){
+        console.log('swiped right');
+        snapshowSlides(snapslideIndex -= 1);
+      }
+      if (swipedir==="up"){
+        console.log('swiped down');
+        window.scrollTo(tabcont.offsetLeft,tabcont.offsetTop);
+      }
+      if (swipedir==="down"){
+        console.log('swiped up');
+        window.scrollTo(whatwedo.offsetLeft,whatwedo.offsetTop);
+      }
+    });
 
   }
 

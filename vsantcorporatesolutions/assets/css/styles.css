@@ -1182,7 +1182,7 @@ RESPONSIVE
   
   .whatwedo-text button:hover{
     color: #fff;
-    background-color: #334257;
+    background-color: hsl(215, 26%, 27%);
     border: #334257 2px solid;
     cursor: pointer;
   }
@@ -1203,13 +1203,11 @@ RESPONSIVE
     background-color: #fff;
     color: #fff;
   }
-  
   .home-layout img{
     margin: 4% 10% 4% 20%;
     width: 60%;
   
   }
-  
   .home-layout p{
     margin: 2% 0 2% 10%;
     font-size: 150%;
@@ -1233,7 +1231,7 @@ RESPONSIVE
   
   .snapshots h1{
     color: #fff;
-    margin: 10% 0 -6% 10%;
+    margin: 8% 0 -6% 10%;
     font-size: 150%;
   }
   
@@ -1258,7 +1256,7 @@ RESPONSIVE
   
   .snap-card{
     padding: 1%;
-    height: 100%;
+    height: 325px;
     margin-top: 10%;
     border-radius: 5%;
     text-align: center;
@@ -1290,7 +1288,7 @@ RESPONSIVE
   .snap-prev, .snap-next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     display: block;
     width: auto;
     margin-top: -22px;
@@ -1305,6 +1303,9 @@ RESPONSIVE
   .snap-next {
     right: 0;
     border-radius: 3px 0 0 3px;
+  }
+  .snap-prev {
+    margin-left: -1%;
   }
 
   .snap-dot {
@@ -1321,7 +1322,8 @@ RESPONSIVE
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
-    width: 100%;
+    margin: 0 auto;
+    width: 96%;
     display: block;
     text-align: center;
   }

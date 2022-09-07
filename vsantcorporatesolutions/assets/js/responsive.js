@@ -70,7 +70,7 @@ window.onload = function(){
       console.log('swiped right');
       showSlides(slideIndex -= 1);
     }
-    if (swipedir==="top"){
+    if (swipedir==="up"){
       console.log('swiped down');
       window.scrollTo(stratergy.offsetLeft,stratergy.offsetTop);
     }
@@ -132,7 +132,7 @@ function swipedetect(el, callback){
   startY,
   distX,
   distY,
-  threshold = 50, //required min distance traveled to be considered swipe
+  threshold = 30, //required min distance traveled to be considered swipe
   restraint = 100, // maximum distance allowed at the same time in perpendicular direction
   allowedTime = 300, // maximum time allowed to travel that distance
   elapsedTime,
@@ -149,9 +149,9 @@ function swipedetect(el, callback){
       e.preventDefault()
   }, false)
 
-  // touchsurface.addEventListener('touchmove', function(e){
-  //     e.preventDefault() // prevent scrolling when inside DIV
-  // }, false)
+  touchsurface.addEventListener('touchmove', function(e){
+      e.preventDefault() // prevent scrolling when inside DIV
+  }, true)
 
   touchsurface.addEventListener('touchend', function(e){
       var touchobj = e.changedTouches[0]

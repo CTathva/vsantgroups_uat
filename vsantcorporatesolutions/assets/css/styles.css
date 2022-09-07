@@ -1338,12 +1338,12 @@ RESPONSIVE
                         'grid';
   }
   
-  .text{
+  .tabcont .text{
     width: 100%;
     text-align: center;
     grid-area: text;
   }
-  .grid{
+  .tabcont .grid{
     width: 100%;
     grid-area: grid;
   }

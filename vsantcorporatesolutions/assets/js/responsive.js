@@ -59,19 +59,23 @@ window.onload = function(){
   }); 
   var el = document.getElementById('swipezone');
   var head = document.getElementById('header');
-  var getin = document.getElementById('getin');
+  var stratergy = document.getElementById('stratergy');
   swipedetect(el, function(swipedir){
     // swipedir contains either "none", "left", "right", "top", or "down"
     if (swipedir==="left"){
+      console.log('swiped lest');
       showSlides(slideIndex += 1);
     }
     if (swipedir==="right"){
+      console.log('swiped right');
       showSlides(slideIndex -= 1);
     }
     if (swipedir==="top"){
-      window.scrollTo(getin.offsetLeft,getin.offsetTop);
+      console.log('swiped down');
+      window.scrollTo(stratergy.offsetLeft,stratergy.offsetTop);
     }
     if (swipedir==="down"){
+      console.log('swiped up');
       window.scrollTo(head.offsetLeft,head.offsetTop);
     }
 });
@@ -128,7 +132,7 @@ function swipedetect(el, callback){
   startY,
   distX,
   distY,
-  threshold = 30, //required min distance traveled to be considered swipe
+  threshold = 50, //required min distance traveled to be considered swipe
   restraint = 100, // maximum distance allowed at the same time in perpendicular direction
   allowedTime = 300, // maximum time allowed to travel that distance
   elapsedTime,
@@ -145,9 +149,9 @@ function swipedetect(el, callback){
       e.preventDefault()
   }, false)
 
-  touchsurface.addEventListener('touchmove', function(e){
-      e.preventDefault() // prevent scrolling when inside DIV
-  }, false)
+  // touchsurface.addEventListener('touchmove', function(e){
+  //     e.preventDefault() // prevent scrolling when inside DIV
+  // }, false)
 
   touchsurface.addEventListener('touchend', function(e){
       var touchobj = e.changedTouches[0]

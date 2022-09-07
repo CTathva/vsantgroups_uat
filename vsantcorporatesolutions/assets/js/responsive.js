@@ -39,7 +39,8 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
+  // slides[slideIndex-1].addEventListener('click',);
   dots[slideIndex-1].className += " active";
 }
 function carousel() {
@@ -82,27 +83,42 @@ window.onload = function(){
     return new Promise(resolve => setTimeout(resolve, ms));  
   };  
   sleep(7000).then(() => {  
-    carousel();
+   carousel();
   });
   
-  var el = document.getElementById('swipezone');
+  var el = document.getElementById("swipezone");
+  // el.addEventListener('click',handleclick);
+  // function handleclick(){
+  //   var text = document.getElementsByClassName("mySlides");
+  //   console.log(text[slideIndex-1].id);
+  // }
+
   var head = document.getElementById('header');
   var getin = document.getElementById('getin');
   
   swipedetect(el, function(swipedir){
     if (swipedir==="left"){
+      console.log('swiped left');
       showSlides(slideIndex += 1);
     }
+    if (swipedir==="click"){
+      var text = document.getElementsByClassName("mySlides");
+      window.location.href='services.html?type='+text[slideIndex-1].id;
+    }
     if (swipedir==="right"){
+      console.log('swiped right');
       showSlides(slideIndex -= 1);
     }
     if (swipedir==="up"){
+      console.log('swiped up');
       window.scrollTo(getin.offsetLeft,getin.offsetTop);
     }
     if (swipedir==="down"){
+      console.log('swiped down');
       window.scrollTo(head.offsetLeft,head.offsetTop);
     }
   });
+ 
 
   var x = window.matchMedia("(max-width: 420px)")
   if(x.matches===true){
@@ -184,7 +200,8 @@ function swipedetect(el, callback){
   distX,
   distY,
   threshold = 30, //required min distance traveled to be considered swipe
-  restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+  restraint = 50, // maximum distance allowed at the same time in perpendicular direction
+  restraintTouch = 10, // maximum distance allowed at the same time in perpendicular direction
   allowedTime = 300, // maximum time allowed to travel that distance
   elapsedTime,
   startTime,
@@ -209,13 +226,21 @@ function swipedetect(el, callback){
       distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
       distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
       elapsedTime = new Date().getTime() - startTime // get time elapsed
-      if (elapsedTime <= allowedTime){ // first condition for awipe met
+      if (elapsedTime > 100 && elapsedTime <= allowedTime){ // first condition for awipe met
           if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
               swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
           }
-          else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
+          else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint ){ // 2nd condition for vertical swipe met
               swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
           }
+      }
+      else if (elapsedTime<200){
+        if (Math.abs(distX) < threshold){ // 2nd condition for horizontal swipe met
+          swipedir='click';
+        }
+      else if (Math.abs(distY) < threshold){ // 2nd condition for vertical swipe met
+        swipedir='click';
+      }
       }
       handleswipe(swipedir)
       e.preventDefault()

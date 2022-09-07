@@ -1,3 +1,6 @@
+let slideIndex = 1;
+let snapslideIndex = 1;
+
 function myFunction() {
   var btn = document.getElementById('responsive-menu');
   var menu = document.getElementById('menu');
@@ -16,11 +19,10 @@ function myFunction() {
   }
 }
 
-let slideIndex = 1;
 function plusSlides(n) {
+  console.log('pressed');
   showSlides(slideIndex += n);
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -40,17 +42,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
 function carousel() {
   showSlides(slideIndex += 1);
   setTimeout(carousel, 7000); 
 }
 
-let snapslideIndex = 1;
 function snapplusSlides(n) {
   snapshowSlides(snapslideIndex += n);
 }
-
 function snapshowSlides(n) {
   let i;
   let snapslides = document.getElementsByClassName("snap-card");
@@ -70,7 +69,6 @@ function snapshowSlides(n) {
   snapslides[snapslideIndex-1].style.display = "block";  
   snapdots[snapslideIndex-1].className += " active";
 }
-
 function snapcarousel() {
   snapshowSlides(snapslideIndex += 1);
   setTimeout(snapcarousel, 10000); 
@@ -79,83 +77,66 @@ function snapcarousel() {
 
 window.onload = function(){ 
   showSlides(1);
-  
-  var x = window.matchMedia("(max-width: 420px)")
-  if(x.matches===true){
-    snapshowSlides(1);
-    let snapsleep = ms => {  
-      return new Promise(resolve => setTimeout(resolve, ms));  
-    };  
-    snapsleep(10000).then(() => {  
-      snapcarousel();
-    }); 
-    var el1 = document.getElementById('snapshots-layout');
-    var whatwedo = document.getElementById('whatwedo');
-    var tabcont = document.getElementById('tabcont');
-    swipedetect(el1, function(swipedir){
-      // swipedir contains either "none", "left", "right", "top", or "down"
-      if (swipedir==="left"){
-        console.log('swiped lest');
-        snapshowSlides(snapslideIndex += 1);
-      }
-      if (swipedir==="right"){
-        console.log('swiped right');
-        snapshowSlides(snapslideIndex -= 1);
-      }
-      if (swipedir==="up"){
-        console.log('swiped down');
-        window.scrollTo(tabcont.offsetLeft,tabcont.offsetTop);
-      }
-      if (swipedir==="down"){
-        console.log('swiped up');
-        window.scrollTo(whatwedo.offsetLeft,whatwedo.offsetTop);
-      }
-    });
-
-  }
 
   let sleep = ms => {  
     return new Promise(resolve => setTimeout(resolve, ms));  
   };  
   sleep(7000).then(() => {  
     carousel();
-  }); 
-  
-
-  
+  });
   
   var el = document.getElementById('swipezone');
   var head = document.getElementById('header');
   var getin = document.getElementById('getin');
+  
   swipedetect(el, function(swipedir){
-    // swipedir contains either "none", "left", "right", "top", or "down"
     if (swipedir==="left"){
-      console.log('swiped lest');
       showSlides(slideIndex += 1);
     }
     if (swipedir==="right"){
-      console.log('swiped right');
       showSlides(slideIndex -= 1);
     }
     if (swipedir==="up"){
-      console.log('swiped down');
       window.scrollTo(getin.offsetLeft,getin.offsetTop);
     }
     if (swipedir==="down"){
-      console.log('swiped up');
       window.scrollTo(head.offsetLeft,head.offsetTop);
     }
   });
 
-  
+  var x = window.matchMedia("(max-width: 420px)")
+  if(x.matches===true){
+    
+    snapshowSlides(1);
+    
+    let snapsleep = ms => {  
+      return new Promise(resolve => setTimeout(resolve, ms));  
+    };  
+    snapsleep(10000).then(() => {  
+      snapcarousel();
+    });
 
-  var hideMe = document.getElementById('companiesmenu');
-  const display1 = window.getComputedStyle(hideMe).display; 
-       document.onclick = function(e){
-          if(e.target.id !== 'companiesmenu' && display1==='flex'){
-             hideMe.style.display = 'none';
-          }
-       };
+    var el1 = document.getElementById('snapshots-layout');
+    var whatwedo = document.getElementById('whatwedo');
+    var tabcont = document.getElementById('tabcont');
+    
+    swipedetect(el1, function(swipedir){
+      if (swipedir==="left"){
+        snapshowSlides(snapslideIndex += 1);
+      }
+      if (swipedir==="right"){
+        snapshowSlides(snapslideIndex -= 1);
+      }
+      if (swipedir==="up"){
+        window.scrollTo(tabcont.offsetLeft,tabcont.offsetTop);
+      }
+      if (swipedir==="down"){
+        window.scrollTo(whatwedo.offsetLeft,whatwedo.offsetTop);
+      }
+    });
+
+  }
+
 }
 
 function changeAbout(n){

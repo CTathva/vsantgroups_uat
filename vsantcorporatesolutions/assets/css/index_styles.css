@@ -610,8 +610,12 @@
       background-color: #142230;
       border: #fff 1px solid;
     }
-    .prev, .next {
-      display: none;
+    .prev:hover{
+      background-color: transparent;
+
+    }
+    .next:hover{
+      background-color: transparent;
     }
    
   

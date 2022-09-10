@@ -236,9 +236,9 @@ RESPONSIVE
     color: #142230;
     font-weight: 100;
     white-space: nowrap;
-    max-width: 155px;
+    max-width: 150px;
     margin: 1%;
-    font-size: 75%;
+    font-size: 80%;
     text-overflow: ellipsis;
     overflow: hidden;
     max-lines: 1;

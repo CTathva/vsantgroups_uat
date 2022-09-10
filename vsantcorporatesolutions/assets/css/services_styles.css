@@ -97,9 +97,7 @@ td{
   font-weight: bold;
   width: 250px;
 }
-span{
-  font-size: 150%;
-}
+
 .text p{
   text-align: justify;
   font-size: 100%;
@@ -145,12 +143,6 @@ span{
 
 .text-left table{
   margin: 3% 0%;
-}
-td{
-  padding: 2% 2% 2% 0;
-  font-size: 90%;
-  font-weight: bold;
-  width: 250px;
 }
 span{
   font-size: 150%;
@@ -260,7 +252,7 @@ RESPONSIVE
   
   .event{
     width: 80%;
-    margin: 5% auto;
+    margin: 1% auto 19% auto;
     display: grid;
     grid-template-areas:'image'
                         'text';
@@ -288,13 +280,13 @@ RESPONSIVE
   }
   
   .text{
-    width: 120%;
+    width: 100%;
     grid-area: text;
   }
   
   .text h1{
-    font-size: 200%;
-    margin: 2% 7%;
+    font-size: 150%;
+    margin: 7% 0%;
     font-weight: lighter;
   }
   
@@ -303,23 +295,21 @@ RESPONSIVE
   }
   
   .text table{
-    margin: 3% 7%;
+    margin: 3% 0%;
   }
   td{
     padding: 2% 2% 2% 0;
-    font-size: 90%;
+    font-size: 70%;
     font-weight: bold;
-    width: 250px;
+    width: 260px;
   }
-  span{
-    font-size: 150%;
-  }
+
   .text p{
     text-align: justify;
     font-size: 100%;
     line-height: 150%;
     color: gray;
-    margin: -4% 15% 0 7%;
+    margin: -15% 0% 0 0%;
   }
   
   .text button{
@@ -327,11 +317,10 @@ RESPONSIVE
     border: #142230 2px solid;
     font-weight: bold;
     border-radius: 5px;
-    padding: 2%;
-    float: right;
-    width: 30%;
+    padding: 4%;
+    width: 100%;
     color: #142230;
-    margin: 3% 15% 0 7%;
+    margin: 3% 0 0 0;
   }
   
   .text button:hover{
@@ -344,12 +333,13 @@ RESPONSIVE
   
   
   .text-left{
-    width: 120%;
+    width: 100%;
+    grid-area: text;
   }
   
   .text-left h1{
-    font-size: 200%;
-    margin: 2% 0%;
+    font-size: 150%;
+    margin: 7% 0%;
     font-weight: lighter;
   }
   
@@ -360,51 +350,32 @@ RESPONSIVE
   .text-left table{
     margin: 3% 0%;
   }
-  td{
-    padding: 2% 2% 2% 0;
-    font-size: 90%;
-    font-weight: bold;
-    width: 250px;
-  }
   span{
-    font-size: 150%;
+    font-size: 100%;
   }
   .text-left p{
     text-align: justify;
     font-size: 100%;
     line-height: 150%;
     color: gray;
-    margin: -4% 25% 0 0%;
+    margin: -15% 0% 0 0%;
   }
   .text-left button{
     background-color: #fff;
     border: #142230 2px solid;
     font-weight: bold;
     border-radius: 5px;
-    padding: 2%;
-    width: 30%;
+    padding: 4%;
+    width: 100%;
     color: #142230;
-    margin: 3% 15% 0 0%;
+    margin: 3% 0 0 0;
   }
   
   .text-left button:hover{
     background-color: #334257;
     border: #334257 2px solid;
-    cursor: pointer;
     color: white;
   }
-  
-  
-  /* .event .image .right{
-    width: 70%;
-  }
-  
-  .event .text .right{
-    width: 130%;
-    margin-left: -30%;
-  } */
-  
-  
   
   .skillsmain{
     width: 100%;
@@ -415,9 +386,10 @@ RESPONSIVE
   
   .skills{
     width: 80%;
-    margin: 5% auto;
+    margin: 1% auto 19% auto;
     display: grid;
-    grid-template-areas:'image text';
+    grid-template-areas:'image'
+                        'text';
   }
   
     

@@ -216,6 +216,9 @@ RESPONSIVE
 
 @media screen and (max-width: 420px) {
  
+  *{
+    cursor: default;
+  }
   .content .keep{
     font-size: 140%;
     font-weight: normal;

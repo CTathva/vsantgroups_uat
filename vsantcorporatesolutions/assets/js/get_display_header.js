@@ -26,7 +26,9 @@ var array = [];
 var i = 0;
 var slide = 0;
 
-
+function loaded(i){
+  document.getElementsByClassName('loader')[i].style.visibility = 'hidden';
+}
 
 function load_image_data(json,value){
     var photomain = document.getElementById("photolayout");
@@ -39,7 +41,7 @@ function load_image_data(json,value){
                     url: item.URL
                 });    
                 const photodiv = document.createElement("div");
-                var innerclass = '<img src="'+item.URL+'"/>';
+                var innerclass = '<div class="loader"></div><img onload="loaded('+i+')" src="'+item.URL+'"/>';
                 photodiv.setAttribute("class", "photo-display");
                 photodiv.setAttribute("onclick", "view_full_screen("+i+")");
                 photodiv.innerHTML = innerclass;

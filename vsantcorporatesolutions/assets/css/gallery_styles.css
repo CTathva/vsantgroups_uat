@@ -25,7 +25,6 @@
   width: 100%;
   padding: 2%;
   margin-bottom: 7%;
-  height: auto;
 }
 
 .photos h1{
@@ -34,17 +33,27 @@
 }
 
 .photos-layout{
-  width: 90%;
+  width: 100%;
+  padding: 0 5% 2% 5%;
   display: grid;
-  margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2%;
+  gap: 2.5%;
 }
-
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #0f4d92;
+  width: 50px;
+  position: absolute;
+  margin: 5% 8%;
+  height: 50px;
+  -webkit-animation: spin 700ms linear infinite; /* Safari */
+  animation: spin 700ms linear infinite;
+}
 .photo-card{
   padding: 1%;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   height: 225px;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
   border-radius: 2%;
@@ -66,10 +75,7 @@
 }
 .photo-card img{
   width: 100%;
-  background-image: url('../image/default.jpg');
-  background-size: 100%;
   background-color: whitesmoke;
-  background-repeat: no-repeat;
   height: 85%;
   border-radius: 2%;
   border: 2px #fff solid;
@@ -142,7 +148,7 @@
   width: 100%;
   height: 200px;
   cursor: pointer;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
   border-radius: 5%;
   text-align: center;
@@ -150,9 +156,6 @@
 
 .photo-display img{
   width: 100%;
-  background-image: url('../image/default.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
   height: 100%;
   background-color: whitesmoke;
   border-radius: 5%;
@@ -166,6 +169,165 @@ RESPONSIVE
 **********************************************************************/
 
 @media screen and (max-width: 420px) {
+  *{
+    cursor: default;
+  }
 
+  .content h1{
+    font-size: 150%;
+    font-weight: normal;
+    padding: 1% 2% 2% 5%;
+    color: #334257;
+  }
+  .content .keep{
+    font-size: 140%;
+    font-weight: normal;
+    padding: 0% 2% 2% 5%;
+    color: #334257;
+  }
+  .content strong{
+    color: #0f4d92;
+  }
+  
+  .photos{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 7%;
+  }
+  
+  .photos h1{
+    color: #334257;
+    font-size: 100%;
+  }
+  
+  .photos-layout{
+    width: 100%;
+    margin: -5% 0 10% 0;
+    padding: 0 5% 2% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0% 4%;
+  }
+  .loader {
+    border: 4px solid whitesmoke;
+    border-radius: 50%;
+    border-top: 4px solid #0f4d92;
+    width: 35px;
+    position: absolute;
+    margin: 10% 16%;
+    height: 35px;
+    z-index: 1;
+    -webkit-animation: spin 700ms linear infinite; /* Safari */
+    animation: spin 700ms linear infinite;
+  }
+  .photo-card{
+    padding: 1%;
+    width: 100%;
+    margin-bottom: 10%;
+    height: 155px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-radius: 2%;
+    z-index: 10;
+    text-align: center;
+  }
+  .photo-card:hover{
+   background-color: none;
+  }
+  .photo-card h2{
+    color: #142230;
+    font-weight: 100;
+    white-space: nowrap;
+    max-width: 155px;
+    margin: 1%;
+    font-size: 75%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-lines: 1;
+  }
+  .photo-card img{
+    width: 100%;
+    background-color: whitesmoke;
+    height: 85%;
+    display: block;
+    border-radius: 2%;
+    border: 2px #fff solid;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    }
+  
+  .popup {
+    margin: 50% auto;
+    text-align: center;
+    width: 90%;
+    height: 250px;
+    position: relative;
+  }
+  .popup img{
+    height: 245px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 35px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .popup .close:hover {
+    color: rgb(255, 123, 123);
+  }
+  
+  .photo-display{
+    padding: 1%;
+    width: 100%;
+    height: 135px;
+    margin-bottom: 10%;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-radius: 5%;
+    text-align: center;
+  }
+  
+  .photo-display img{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    border: 2px #fff solid;
+  }
+  
 
 }

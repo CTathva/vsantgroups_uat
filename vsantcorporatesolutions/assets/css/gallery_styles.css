@@ -133,7 +133,6 @@
   position: absolute;
   top: -20px;
   right: 30px;
-  transition: all 200ms;
   font-size: 50px;
   text-decoration: none;
   color: #fff;
@@ -273,7 +272,7 @@ RESPONSIVE
     position: relative;
   }
   .popup img{
-    height: 245px;
+    height: 240px;
   }
   
   .prev, .next {
@@ -297,12 +296,14 @@ RESPONSIVE
     left: 0;
     border-radius: 3px 0 0 3px;
   }
+  .prev:hover, .next:hover {
+    background-color: transparent;
+  }
   
   .popup .close {
     position: absolute;
     top: -5px;
     right: 15px;
-    transition: all 200ms;
     font-size: 35px;
     text-decoration: none;
     color: #fff;

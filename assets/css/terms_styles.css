@@ -119,12 +119,15 @@ RESPONSIVE
 **********************************************************************/
 
 @media screen and (max-width: 420px) {
- 
+  *{
+    cursor: default;
+  }
   .header{
     width: 100%;
     padding: 1%;
     height: 70px;
     display: flex;
+    cursor: default;
     z-index: 100;
     align-items: center;
     overflow: hidden;
@@ -137,6 +140,7 @@ RESPONSIVE
     z-index: 500;
     display: flex;
     height: 65px;
+    cursor: default;
     margin-top: -10px;
     margin-left: -13%;
     transform: skew(-30deg);
@@ -149,6 +153,7 @@ RESPONSIVE
     margin-top: 5%;
     margin-left: 5%;
     letter-spacing: 2px;
+    cursor: default;
     font-size: 130%;
     font-weight: 900;
     transform: skew(30deg);
@@ -157,6 +162,7 @@ RESPONSIVE
     color:#142230; 
     font-weight: bold;
     margin-top: 17%;
+    cursor: default;
     margin-left: -36%;
     font-size: 100%;
     transform: skew(30deg);
@@ -164,6 +170,7 @@ RESPONSIVE
 
   .logo{
     margin-left: 25%;
+    cursor: default;
     margin-top: 4%;
     transform: skew(30deg);
     height: 75%;
@@ -211,6 +218,7 @@ RESPONSIVE
   .footer-identity-heading{
     color:#53BDED;
     cursor: pointer;
+    cursor: default;
     margin-left: 2%;
     font-weight: bold;
     font-size: 90%;
@@ -222,6 +230,7 @@ RESPONSIVE
   .copyright{
     font-size: 55%;
     right: 0;
+    cursor: default;
     margin-right: 5%;
     position: absolute;
     color: #999;

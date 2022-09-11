@@ -563,6 +563,7 @@
 }
 .terms:hover{
   color: #fff;
+  cursor: default;
 }
 
 }

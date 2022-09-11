@@ -609,7 +609,6 @@
     
     .butt:hover{
       color: #fff;
-      cursor: pointer;
       background-color: #142230;
       border: #fff 1px solid;
     }
@@ -623,7 +622,6 @@
    
   
     .dot {
-      cursor: pointer;
       height: 7px;
       width: 7px;
       margin: 0 0.5% 0 0.5%;
@@ -695,7 +693,6 @@
       color: #fff;
       background-color: #334257;
       border: #334257 2px solid;
-      cursor: pointer;
     }
   
     .getin-text .marker{
@@ -844,7 +841,6 @@
       color: #fff;
       background-color: hsl(215, 26%, 27%);
       border: #334257 2px solid;
-      cursor: pointer;
     }
     
     .home-layout {
@@ -942,7 +938,6 @@
       border: 2px #fff solid;
     }
     .snap-prev, .snap-next {
-      cursor: pointer;
       position: absolute;
       top: 60%;
       display: block;
@@ -965,7 +960,6 @@
     }
   
     .snap-dot {
-      cursor: pointer;
       height: 7px;
       width: 7px;
       margin: 0 0.5% 0 0.5%;

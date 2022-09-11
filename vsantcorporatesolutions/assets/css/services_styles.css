@@ -326,7 +326,6 @@ RESPONSIVE
   .text button:hover{
     background-color: #334257;
     border: #334257 2px solid;
-    cursor: pointer;
     color: white;
   }
   

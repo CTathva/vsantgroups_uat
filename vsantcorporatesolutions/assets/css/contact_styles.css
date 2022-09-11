@@ -290,7 +290,6 @@ RESPONSIVE
     transition: 0.3s;
     width: 70px;
     display: block;
-    cursor: pointer;
     margin: -5% 5% 0 0%;
     float: left;
     padding: 2.5% 0 2.5% 0;
@@ -319,7 +318,6 @@ RESPONSIVE
     background-color: #334257;
     border: #fff solid 1px;
     border-radius: 5px;
-    cursor: pointer;
     transition: 0.3s;
     margin: -1% 0% 0 -7%;
     width: 40%;
@@ -361,7 +359,6 @@ RESPONSIVE
     height: 45px;
     border: none;
     font-weight: bold;
-    cursor: pointer;
     padding: 1.5%;
     transition: 0.3s;
     resize: none;
@@ -424,7 +421,6 @@ RESPONSIVE
   }
   .popup .close:hover {
     color: rgb(255, 123, 123);
-    cursor: pointer;
   }
     
 }

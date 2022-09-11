@@ -300,6 +300,9 @@ RESPONSIVE
 
 @media screen and (max-width: 420px) {
 
+  *{
+    cursor: default;
+  }
   .about h1{
     font-size: 100%;
     font-weight: 100;
@@ -345,7 +348,6 @@ RESPONSIVE
     background-color: #142230;
     padding: 4%;
     font-weight: bold;
-    cursor: pointer;
     border-radius: 0px;
     border: 1px solid #142230;
     color: #fff;
@@ -426,7 +428,6 @@ RESPONSIVE
   
   .director li:hover{
     color: #0f4d92;
-    cursor: pointer;
   }
   
   .tabcont{

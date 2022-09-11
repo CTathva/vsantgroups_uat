@@ -275,7 +275,7 @@ RESPONSIVE
     margin-top: -40%;
     position: relative;
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-    z-index: 900;
+    z-index: 200;
     float: right;
   }
   
@@ -286,7 +286,7 @@ RESPONSIVE
   
   .text h1{
     font-size: 150%;
-    margin: 7% 0%;
+    margin: 10% 0%;
     font-weight: lighter;
   }
   
@@ -316,7 +316,7 @@ RESPONSIVE
     background-color: #fff;
     border: #142230 2px solid;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 4%;
     width: 100%;
     color: #142230;
@@ -339,7 +339,7 @@ RESPONSIVE
   
   .text-left h1{
     font-size: 150%;
-    margin: 7% 0%;
+    margin: 10% 0%;
     font-weight: lighter;
   }
   
@@ -364,7 +364,7 @@ RESPONSIVE
     background-color: #fff;
     border: #142230 2px solid;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 4%;
     width: 100%;
     color: #142230;

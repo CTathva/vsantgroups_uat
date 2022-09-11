@@ -131,3 +131,33 @@
       }
     }
   })();
+
+
+
+  window.onload = function(){ 
+    var event=location.search.split('event=')[1];
+    var skill=location.search.split('skill=')[1];
+    var box = document.getElementById('Message');
+    try{
+      event = event.replaceAll("%20", " ");
+    }
+    catch{
+      var url = 'contact.html';
+    }
+    try{
+      skill = skill.replaceAll("%20", " ");
+    }
+    catch{
+      var url = 'contact.html';
+    }
+    if(event === undefined && skill === undefined){
+      box.value = '';
+      console.log('value'+ skill+' '+event);
+    }
+    else if ( event === undefined && skill != null ){
+      box.value = "Hello,\n\nI am willing to enroll for the "+ skill+ " training. I would like to hear from you.\n\nThanks!";
+    }
+    else{
+      box.value = "Hello,\n\nWe am planning for a "+ event+ ". We request you to offer your service.\n\nThanks!";
+    }
+  }

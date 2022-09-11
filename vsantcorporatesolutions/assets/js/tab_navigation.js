@@ -18,3 +18,16 @@ function changeTab(n){
         skills.classList.add("active");
     }
   }
+
+  window.onload = function(){ 
+    var service=location.search.split('type=')[1];
+    if(service === undefined){
+        changeTab(1);
+    }
+    else if ( service === 'skill' ){
+        changeTab(2);
+    }
+    else{
+        changeTab(1);
+    }
+  }

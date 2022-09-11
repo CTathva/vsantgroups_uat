@@ -887,4 +887,34 @@ RESPONSIVE
     font-size: 75%;
   }
     
+    
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  right: 0;
+  background: #000;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+}
+.popup{
+  margin: 45% auto;
+  text-align: center;
+  color: #fff;
+  width: 70%;
+  border-radius: 5px;
+  border-bottom: 3px solid #53BDED;
+  background-color: #142230;
+  height: 200px;
+  position: relative;
+}
+.popup img{
+  height: 130px;
+}
+.popup h1{
+  font-size: 90%;
+}
 }

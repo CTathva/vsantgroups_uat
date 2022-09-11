@@ -477,6 +477,46 @@ RESPONSIVE
     }
 }
   
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  right: 0;
+  background: #000;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+}
+.popup{
+  margin: 45% auto;
+  text-align: center;
+  color: #fff;
+  width: 70%;
+  border-radius: 5px;
+  border-bottom: 3px solid #53BDED;
+  background-color: #142230;
+  height: 200px;
+  position: relative;
+}
+.popup img{
+  height: 130px;
+}
+.popup h1{
+  font-size: 90%;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 200%;
+  text-decoration: none;
+}
+.popup .close:hover {
+  color: rgb(255, 123, 123);
+}
   .horizontal .menu-items{
     display: none;
   }

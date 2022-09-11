@@ -96,9 +96,7 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+ 
   .dot {
     cursor: pointer;
     height: 7px;
@@ -595,6 +593,21 @@
       top: 8px;
       width: auto;
     }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: auto;
+      margin-top: -22px;
+      cursor: default;
+      padding: 16px;
+      color: #eee;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
     
     .butt{
       color: #142230;
@@ -611,6 +624,7 @@
       font-size: 80%;
       letter-spacing: 2px;
       width: auto;
+      user-select: none;
     }
     
     .butt:hover{
@@ -618,15 +632,8 @@
       background-color: #142230;
       border: #fff 1px solid;
     }
-    .prev:hover{
-      background-color: transparent;
-
-    }
-    .next:hover{
-      background-color: transparent;
-    }
    
-  
+   
     .dot {
       height: 7px;
       width: 7px;
@@ -635,6 +642,11 @@
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
+    }
+    .dot:hover {
+
+      background-color: gray;
+
     }
     .dot-container{
       padding: 8px 12px;

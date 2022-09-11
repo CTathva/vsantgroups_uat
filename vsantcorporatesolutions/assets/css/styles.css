@@ -436,6 +436,7 @@
   width: 100%;
   height: auto;
   padding: 3%;
+  cursor: default;
   text-align: center;
   color: #fff;
   position: relative;
@@ -443,6 +444,7 @@
 .footer-identity-heading{
   color:#eee;
   margin: 0% 0 0 5%;
+  cursor: default;
   line-height: 150%;
   font-size: 130%;
 }
@@ -450,6 +452,7 @@
   text-align: left;
   display: flex;
   width: 100%;
+  cursor: default;
   padding: 4%;
   height: 70px;
   justify-content: center;
@@ -457,45 +460,56 @@
 }
 .footer-logo{
   height: 60px;
+  cursor: default;
 }
 .footer-heading{
   color:white;
+  cursor: default;
   text-align: left;
   font-size: 90%;
 }
 .footer-companies{
   grid-area: companies;
   margin: 10% 0 0 5%;
+  cursor: default;
 }
 .footer-useful-links{
   grid-area: usefullinks;
   margin: 10% 0 0 5%;
+  cursor: default;
 }
 .footer-address{
   grid-area: address;
   margin: 10% 0 0 5%;
+  cursor: default;
 }
 .list{
   margin-bottom: 5%;
+  cursor: default;
 }
 .footer-list{
   color:#999;
   font-size: 90%;
+  cursor: default;
   transition: 0.3s;
 }
 .footer-list i{
   transform: rotateY(180deg);
+  cursor: default;
 }
 .footer-list:hover{
   color: #fff;
+  cursor: default;
 }
 .footer-social{
   width: 100%;
+  cursor: default;
   margin-left: 15%;
   float: right;
 }
 .footer-social  *{
   display: inline-block;
+  cursor: default;
   font-size: 90%;
 }
 .grid_layout {
@@ -506,12 +520,14 @@
   height: auto;
   width: 100%;
   position: relative;
+  cursor: default;
   margin: 3% 0 -2% 0;
   padding: 10px 0 10px 0;
 }
 .groups{
   display: flex;
   width: 100%;
+  cursor: default;
   justify-content: center;
 }
 .arrow{
@@ -524,6 +540,7 @@
   transition: 0.3s;
   line-height: 40px;
   font-weight: bold;
+  cursor: default;
   float: right;
   margin-top: -15%;
   font-size: 150%;
@@ -534,24 +551,29 @@
 .term-priv{
   display: block;
   width: 100%;
+  cursor: default;
   justify-content: center;
 }
 .groups h1{
+  cursor: default;
   line-height: 40px;
   margin-left: 0;
   color: #53BDED;
 }
 .footer-social-list{
   color:#999;
+  cursor: default;
   transition: 0.3s;
   text-align: left;
   font-size: 125%;
 }
 .footer-social-list:hover{
   color: #fff;
+  cursor: default;
 }
 .copyright{
   font-size: 75%;
+  cursor: default;
   line-height: 40px;
   color:#999;
 }
@@ -559,6 +581,7 @@
   font-size: 75%;
   line-height: 30px;
   transition: 0.3s;
+  cursor: default;s
   color:#999;
 }
 .terms:hover{

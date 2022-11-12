@@ -121,9 +121,7 @@
     text-align: center;
     background-color: #142230;
   }
-  .horizontal .icon {
-    display: none;
-  }
+  
   .horizontal  *{
     display: inline-block;
     transform: skew(30deg);

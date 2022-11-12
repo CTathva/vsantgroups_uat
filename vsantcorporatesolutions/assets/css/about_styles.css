@@ -127,11 +127,17 @@
 
 .director li{
   display: inline;
+  color: #000;
   margin-right: 2%;
   font-size: 125%;
 }
 
-.director li:hover{
+.director a{
+  color: #000;
+
+}
+
+.director a:hover{
   color: #0f4d92;
   cursor: pointer;
 }
@@ -541,6 +547,7 @@ RESPONSIVE
   .whatwe{
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 5% 5% 5%;
     padding-bottom: 5%;
     height: auto;
   }

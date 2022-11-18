@@ -223,7 +223,7 @@
 .aboutus .person{
   width: 80%;
   margin-right: 5%;
-  margin-top: 25%;
+  margin-top: 12.5%;
 }
 .aboutus .marker{
   width: 7%;
@@ -372,7 +372,7 @@ RESPONSIVE
     background-color: #334257;
   }
   .tabs-main p{
-    text-align: justify;
+    text-align: left;
     padding: 0% 4% 2% 4%;
   }
   .marker{
@@ -537,7 +537,7 @@ RESPONSIVE
   .aboutus p{
     margin: 7% 5% 5% 5%;
     color: #eee;
-    text-align: justify;
+    text-align: left;
     line-height: 120%;
     position: relative;
     font-weight: lighter;
@@ -581,7 +581,7 @@ RESPONSIVE
   .whatwe p{
     margin: 7% 5% 5% 5%;
     color: #142230;
-    text-align: justify;
+    text-align: left;
     line-height: 120%;
     position: relative;
     font-weight: lighter;

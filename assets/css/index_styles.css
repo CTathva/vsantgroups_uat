@@ -3,7 +3,14 @@
   DESIGN: DESKTOP
 ***********************************************************************
 **********************************************************************/
-  
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
   .content{
     position: relative;
     width: 100%;
@@ -129,56 +136,25 @@
   }
   
   
-  .getin{
+  .our-clients{
     width: 100%;
     padding: 2%;
-    margin-top: -0.5%;
+    margin-top: 1%;
     background-color: #fff;
   }
-  .getin-cont{
-    display: grid;
-    width: 100%;
-    margin: 3% auto;
-    background-color: #fff;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .getin-img{
-    width: 60%;
-    margin-left: 30%;
-  }
-  .getin-text{
-    width: 170%;
-  }
-  .getin-text p{
+
+  .our-clients p{
     color: #142230;
     margin: 2% 0 2% 10%;
     font-size: 150%;
   }
-  .getin-text h1{
+  .our-clients h1{
     color: #142230;
     margin: 2% 0 2% 10%;
     font-size: 200%;
   }
-  .getin-text button{
-    color: #fff;
-    background-color: #142230;
-    border: #142230 2px solid;
-    margin: 2% 0 2% 10%;
-    padding: 1.4%;
-    transition: 0.3s;
-    font-weight: bold;
-    width: 23%;
-  }
-  .getin-text button:hover{
-    color: #fff;
-    background-color: #334257;
-    border: #334257 2px solid;
-    cursor: pointer;
-  }
-  .getin-img img{
-    width: 100%;
-  }
-  .getin-text .marker{
+
+  .our-clients .marker{
     width: 7%;
     height: 6px;
     margin: 1% 0 0 10%;
@@ -186,6 +162,53 @@
     background-color: #0f4d92;
     color: #0f4d92;
   }
+
+  .slider {
+  background: white;
+  height: 150px;
+  margin: auto;
+  margin-top: 3%;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+}
+
+.slider img{
+  width: 125px;
+  height: 125px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 150px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 150px;
+  width: 300px;
+}
   
   
   
@@ -673,60 +696,21 @@
       animation-name: fade;
       animation-duration: 1s;
     }
-    .getin{
+    .our-clients{
       width: 100%;
       padding: 2%;
       background-color: #fff;
     }
-    .getin-cont{
-      display: block;
-      width: 100%;
-      margin: 3% auto;
-    }
-    .getin-img{
-      display: none;
-    }
-    .getin-text{
-      width: 100%;
-    }
-    .getin-text p{
-      color: #142230;
-      margin: 2% 0 2% 10%;
-      font-size: 150%;
-    }
+
     
-    .getin-text h1{
+    .our-clients h1{
       color: #142230;
       margin: 2% 9% 2% 10%;
       font-size: 200%;
     }
     
-    .getin-text button{
-      /* color: #fff;
-      background-color: #142230;
-      border: #142230 2px solid;
-      margin: 5% 0 5% 10%;
-      padding: 2.5%;
-      transition: 0.3s;
-      font-weight: bold;
-      width: 40%; */
-      background-color: #142230;
-      padding: 4%;
-      font-weight: bold;
-      margin: 7% 0 5% 10%;
-      border: 1px solid #142230;
-      color: #fff;
-      transition: 0.3s;
-      width: 50%;
-    }
-    
-    .getin-text button:hover{
-      color: #fff;
-      background-color: #334257;
-      border: #334257 2px solid;
-    }
-  
-    .getin-text .marker{
+ 
+    .our-clients .marker{
       width: 20%;
       height: 6px;
       margin: 10% 0 7% 10%;
@@ -734,6 +718,53 @@
       background-color: #0f4d92;
       color: #0f4d92;
     }
+
+    .slider {
+      background: white;
+      height: 150px;
+      margin: auto;
+      margin-top: 7%;
+      overflow: hidden;
+      position: relative;
+      width: 80%;
+    }
+    
+    .slider img{
+      width: 100px;
+      height: 100px;
+    }
+    .slider::before,
+    .slider::after {
+      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+      content: "";
+      height: 150px;
+      position: absolute;
+      width: 50px;
+      z-index: 2;
+    }
+    
+    .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+    
+    .slider::before {
+      left: 0;
+      top: 0;
+    }
+    
+    .slider .slide-track {
+      animation: scroll 30s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+    
+    .slider .slide {
+      height: 150px;
+      width: 150px;
+    }
+      
     .stratergy{
       width: 100%;
       background-color: #142230;

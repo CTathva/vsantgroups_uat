@@ -76,10 +76,10 @@ window.onload = function(){
              hideMe.style.display = 'none';
           }
        };
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      var dark = document.getElementById('darkmode');
-      const container = document.querySelectorAll(".header, .heading, .menu-items,.responsive-menu-list,.responsive-menu, p, body, .horizontal,.icon,.header-identity,.companies,.tagline,.companies-menu-list,.menu-items-active");
-        dark.innerHTML='Turn On Light Mode';
-        container.forEach(x => x.classList.toggle('dark'));
-    }
+    // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //   var dark = document.getElementById('darkmode');
+    //   const container = document.querySelectorAll(".header, .heading, .menu-items,.responsive-menu-list,.responsive-menu, p, body, .horizontal,.icon,.header-identity,.companies,.tagline,.companies-menu-list,.menu-items-active");
+    //     dark.innerHTML='Turn On Light Mode';
+    //     container.forEach(x => x.classList.toggle('dark'));
+    // }
 }

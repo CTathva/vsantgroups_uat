@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/index_styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="assets/js/responsive.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -24,19 +25,16 @@
   <div class="header">
       <div class="header-identity">
         <img class="logo" src="assets/image/logo512.png" >
-        <h1 class="heading">VSANT</h1><br><h2 class="tagline">Groups</h2>
+        <h1 class="heading"><strong>VSANT</strong> Groups</h1>
       </div>
       
 
       <div class="horizontal">
-        <a title="About Us" href="inventory.html" class="menu-items">About Us</a>
-        <a href="transactions.html" class="menu-items">Capabilities</a>
-        <a href="customer.html" class="menu-items">Testimonials</a>
-        <a href="credit.html" class="menu-items">Contact Us</a>
-      </div>
-      
-      <div onclick="displaycompany()" class="our-company-identity">
-        <h1 title="Our Companies" class="heading-end">Our Companies&emsp;&emsp;<i class="fa fa-angle-down" aria-hidden="true"></i></h1>
+        <a href="./vsantcorporatesolutions/index.html" class="menu-items">VSANT Corporate Solutions</a>
+        <a>&emsp;</a>
+        <a href="./vsantindustries/index.html" class="menu-items">VSANT Industries</a>
+        <a>&emsp;&emsp;&emsp;</a>
+        <a href="contactus.html" class="menu-items">Contact Us</a>
       </div>
 
   </div>
@@ -50,38 +48,59 @@
     </ul>
   </div>
 
-  <div class="companies" id="companiesmenu">
+  <!-- <div class="companies" id="companiesmenu">
     <ul>
       <li class="companies-list"><a href="vsantcorporatesolutions/index.html" class="companies-menu-list"><i class="fa fa-group" aria-hidden="true"></i>&emsp;VSANT Corporate Solutions</a></li>
       <li class="companies-list"><a class="companies-menu-list"><i class="fa fa-industry" aria-hidden="true"></i>&emsp;VSANT Industries</a></li>
     </ul>
-  </div>
+  </div> -->
 
   <div class="content">
     
     <div class="slideshow-container">
+      <div class="loader"></div>
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <img src="assets/image/Success-Quotes-to-Inspire-Your-Life-Work-and-Business.jpg" style="width:100%">
+      <div id="event" class="mySlides fade">
+        <img class='pc' src="./vsantcorporatesolutions/assets/image/banner/banner1.png" style="width:100%">
+        <img id="swipezone" class='mobile' src="./vsantcorporatesolutions/assets/image/banner/banner1_mobile.png" style="width:100%">
+        <div class="cap">Indulge with One Stop Events Planner</div>
+        <div class="tag">We have Millons of Ideas</div>
+        <div id="butt1" class="butt" onclick="window.location.href='services.html?type=event'">Get Started</div>
       </div>
     
-      <div class="mySlides fade">
-        <img src="assets/image/skill.jpg" style="width:100%">
+      <div id="skill" class="mySlides fade">
+        <img class='pc' src="./vsantcorporatesolutions/assets/image/banner/banner2.png" style="width:100%">
+        <img id="swipezone2" class='mobile' src="./vsantcorporatesolutions/assets/image/banner/banner2_mobile.png" style="width:100%">
+        <div class="cap">A World where we can Be, Belong, Become</div>
+        <div class="tag">Get Industry Standard Skill Training</div>
+        <div class="butt" onclick="window.location.href='services.html?type=skill'">Learn More</div>
       </div>
     
-      <div class="mySlides fade">
-        <img src="assets/image/event.jpg" style="width:100%">
+      <div id="event" class="mySlides fade">
+        <img class='pc' src="./vsantcorporatesolutions/assets/image/banner/banner3.png" style="width:100%">
+        <img id="swipezone3" class='mobile' src="./vsantcorporatesolutions/assets/image/banner/banner3_mobile.png" style="width:100%">
+        <div class="cap">Small, Big or Huge. We Deliver the Best</div>
+        <div class="tag">We make Perfect Events</div>
+        <div class="butt" onclick="window.location.href='services.html?type=event'">Know How</div>
       </div>
-    
+
+      <div id="skill" class="mySlides fade">
+        <img class='pc' src="./vsantcorporatesolutions/assets/image/banner/banner4.png" style="width:100%">
+        <img id="swipezone4" class='mobile' src="./vsantcorporatesolutions/assets/image/banner/banner4_mobile.png" style="width:100%">
+        <div class="cap">Lacking the Right Skills? Feeling<br> Left Behind?</div>
+        <div class="tag">Get Professional Skill Training</div>
+        <div class="butt" onclick="window.location.href='services.html?type=skill'">Join Us</div>
+      </div>
+     
       <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
       <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
 
     </div>
@@ -106,70 +125,62 @@
   <div class="footer">
 
     <div class="grid_layout">
-
       <div class="footer-identity">
-
-        <div class="footer-identity-wrapper">
-          <a href="#"><img class="footer-logo" src="assets/image/logo512.png" ></a>
-          <a class="footer-identity-heading" href="#">VSANT Groups</a>
-        </div>
-        
-        <br><br>
-        <div class="terms">Terms and Condition</div>  
-        <div class="terms">Privacy Policy</div><br>
-        <div class="copyright">Copyright &copy;<script>document.write(" "+new Date().getFullYear());</script> | Dev by Adithya
-    </div>  
-      </div>
+        <img onclick="window.scrollTo(0,0);" class="footer-logo" src="assets/image/logo512.png" >
+        <div class="footer-identity-heading" onclick="window.location.href='index.html'"><b>VSANT</b> Groups</div>
+    </div>
+    
+    <div class="footer-companies">
       
-      <div class="footer-companies">
-        
-        <a class="footer-heading">Our Companies</a><br><br>
-        
-        <ul>
-          <li class="list"><a class="footer-list">VSANT Corporate Solutions</a></li>
-          <li class="list"><a class="footer-list">VSANT Industries</a></li>
-        </ul>
+      <a class="footer-heading">Our Companies</a><br><br>
       
+      <ul>
+        <li class="list"><a href="./vsantcorporatesolutions/index.html" class="footer-list">VSANT Corporate Solutions</a></li>
+        <li class="list"><a href="./vsantindustries/index.html" class="footer-list">VSANT Industries</a></li>
+      </ul>
+    
+    </div>
+
+    <div class="footer-address">
+      <a class="footer-heading">Connect with us</a><br><br>
+      <ul class="footer-social">
+        <li class="list"><a href="https://www.facebook.com/santhoshshetty008/" class="footer-social-list"><i class="fab fa-facebook" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://www.instagram.com/santhoshshetty008/" class="footer-social-list"><i class="fab fa-instagram" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://www.linkedin.com/in/adithya-h-shetty/" class="footer-social-list"><i class="fab fa-linkedin" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://wa.me/+918431164749" class="footer-social-list"><i class="fab fa-whatsapp" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://play.google.com/store/apps/details?id=com.vsant.corp" class="footer-social-list"><i class="fab fa-google-play" aria-hidden="true"></i></a></li>
+      </ul>
+      <br><br><br>
+      <ul>
+        <li class="list"><a href="https://www.google.com/maps/place/VSANT+Groups/@12.9882924,75.9163645,19z/data=!3m1!4b1!4m15!1m9!4m8!1m4!2m2!1d75.9811559!2d12.9857562!4e1!1m2!1m1!2sNo+4+Bikkod+Main+Road,+Taluk,+Madabalu,+Palya+Hobli,+Alur,+Karnataka+573218!3m4!1s0x3ba531f311b9de71:0xc4aa5300b895c5bd!8m2!3d12.9882911!4d75.9169117?hl=en" class="footer-list"><i class="fa fa-location-arrow" aria-hidden="true"></i>&emsp;No 4, Madabalu,<br>&emsp;&ensp;&ensp;Palya Hobli, Alur,<br>&emsp;&ensp;&ensp;Hassan 573218, Karnataka</a></li>
+        <li class="list"><a href="tel:+918431164749" class="footer-list"><i class="fa fa-phone" aria-hidden="true"></i>&emsp;+91 84311 64749</a></li>
+        <li class="list"><a href="mailto:vsantgroups@gmail.com" class="footer-list"><i class="fa fa-envelope" aria-hidden="true"></i>&emsp;vsantgroups@gmail.com</a></li>
+      </ul>
+
+    </div>
+
+
+
+    </div>
+    <br>
+    <div class="footer-bottom">
+      <div onclick="window.location.href='../index.html'" class="groups">
+        <h1>vsantgroups.in</h1>
       </div>
-
-      <div class="footer-useful-links">
-        
-        <a class="footer-heading">Useful Links</a><br><br>
-        
-        <ul>
-          <li class="list"><a class="footer-list">Home</a></li>
-          <li class="list"><a class="footer-list">About Us</a></li>
-          <li class="list"><a class="footer-list">Capabilities</a></li>
-          <li class="list"><a class="footer-list">Testimonials</a></li>
-          <li class="list"><a class="footer-list">Contact Us</a></li>
-          <br>
-          <li class="list" onclick="darkmode()"><a id="darkmode" class="footer-list">Turn On Dark Mode</a></li>
-        </ul>
-      
+      <div class="copyright">Copyright &copy;<script>document.write(" "+new Date().getFullYear());</script> | Developed by Adithya</div> 
+      <div class="term-priv">
+        <div onclick="window.location.href='../terms.html'" class="terms">Terms and Condition</div>
+        <span class="gap"></span>
+        <div onclick="window.location.href='../privacy.html'" class="terms">Privacy Policy</div>
+        <span class="gap"></span>
+        <div onclick="window.location.href='tel:+919590774259'" class="terms">Support</div>
       </div>
-
-      <div class="footer-address">
-        <a class="footer-heading">Connect with us</a><br><br>
-        <ul class="footer-social">
-          <li class="list"><a class="footer-social-list"><i class="fab fa-facebook" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-instagram" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-linkedin" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-whatsapp" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-google-play" aria-hidden="true"></i></a></li>
-        </ul>
-
-      </div>
-
+      <div title="Move to top" onclick="window.scrollTo(0,0);" class="arrow">&#8593;</div>
     </div>
      
   </div>
 
-  <div id="popup2" class="overlay">
-    <div class="popup">
-      <img src="assets/image/animated/maintain.gif">
-      <h1>Work in Progress...!</h1>
-    </div>
-  </div>
+
 
 </body>
 </html>

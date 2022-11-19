@@ -155,7 +155,6 @@ span{
 }
 .text-left button{
   background-color: #142230;
-  border-radius: 5px;
   padding: 2%;
   width: 30%;
   color: #fff;
@@ -319,7 +318,6 @@ RESPONSIVE
   
   .text button{
     background-color: #142230;
-    border-radius: 0px;
     padding: 4%;
     width: 100%;
     color: #fff;
@@ -364,7 +362,6 @@ RESPONSIVE
   }
   .text-left button{
     background-color: #142230;
-    border-radius: 0px;
     padding: 4%;
     width: 100%;
     color: #fff;

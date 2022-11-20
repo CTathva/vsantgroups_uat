@@ -209,348 +209,119 @@
   height: 150px;
   width: 300px;
 }
-  
-  
-  
-  .home-layout {
-    display: grid;
-    background-color: #142230;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2%;
-  }
-  
-  .home-layout .marker{
-    width: 12%;
-    height: 6px;
-    margin: 1% 0 5% 10%;
-    padding: none;
-    background-color: #fff;
-    color: #fff;
-  }
-  
-  
-  
-  .home-layout img{
-    margin: 4% 10% 4% 20%;
-    width: 60%;
-  }
-  .home-layout p{
-    margin: 2% 0 2% 10%;
-    font-size: 150%;
-    color: #fff;
-  }
-  .home-layout h1{
-    color: #fff;
-    font-weight: bold;
-    margin: 2% 0 2% 10%;
-    font-size: 200%;
-  }
-  .stratergy{
-    width: 100%;
-    background-color: #142230;
-    height: auto;
-    padding: 2%;
-  }
-  .pointer-right {
-    width: 200px;
-    height: 40px;
-    margin: 1.5% 0% 1.5% 10%;
-    display: flex;
-    right: 0;
-    cursor: pointer;
-    justify-content: center;
-    position: relative;
-    background: #fff;
-  }
-  .pointer-right:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    cursor: pointer;
-    height: 0;
-    border-left: 20px solid #142230;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
-  .pointer-right:before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #fff;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
-  .pointer-right h2{
-    color: #142230;
-    margin-top: 5%;
-  }
-  .pointer-cont{
-    width: auto;
-    color: #142230;
-    margin: -2% 10% 4% 10%;
-  }
-  .pointer {
-    width: 200px;
-    height: 40px;
-    display: flex;
-    cursor: pointer;
-    margin: 1.5%;
-    justify-content: center;
-    position: relative;
-    background: #fff;
-  }
-  .pointer h2{
-    color: #142230;
-    margin-top: 5%;
-  }
-  .pointer:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    cursor: pointer;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #142230;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
-  .pointer:before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #fff;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
-  
-  
-  
-  
-  
-  
-  .whatwedo{
-    width: 100%;
-    padding: 2%;
-    margin-top: 2%;
-  }
-  .whatwedo-cont{
-    display: grid;
-    width: 100%;
-    margin: 3% auto;
-    background-color: #fff;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .whatwedo-img{
-    width: 50%;
-    margin-left: 30%;
-  }
-  .whatwedo-text{
-    width: 170%;
-  }
-  .whatwedo-text p{
-    color: #142230;
-    margin: 0 0 2% 10%;
-    font-size: 120%;
-    line-height: 170%;
-  }
-  .whatwedo-text h1{
-    color: #142230;
-    margin: 2% 0 0% 10%;
-    font-size: 200%;
-  }
-  .whatwedo-text .marker{
-    width: 7%;
-    height: 6px;
-    margin: 1% 0 0 10%;
-    padding: none;
-    background-color: #0f4d92;
-    color: #0f4d92;
-  }
-  .whatwedo-text button{
-    color: #fff;
-    background-color: #142230;
-    border: #142230 2px solid;
-    margin: 0 0 2% 10%;
-    padding: 1.4%;
-    transition: 0.3s;
-    font-weight: bold;
-    width: 23%;
-  }
-  .whatwedo-text button:hover{
-    color: #fff;
-    background-color: #334257;
-    border: #334257 2px solid;
-    cursor: pointer;
-  }
-  .whatwedo-img img{
-    width: 100%;
-  }
-  
-  
-  
-  .snap-prev, .snap-next {
-   display: none;
-  }
-  
-  .snap-dot-container{
+
+  .our-company{
     display: none;
   }
-  .snapshots{
+
+  .events{
     width: 100%;
     padding: 2%;
-    background-color: #142230;
-    height: auto;
-  }
-  .snapshots h1{
-    color: #fff;
-    margin-left: 2%;
-    font-size: 150%;
-  }
-  .snapshots .marker{
-    width: 6%;
-    height: 6px;
-    margin: 1% 0 2% 2%;
-    padding: none;
+    margin-top: 1%;
     background-color: #fff;
-    color: #fff;
   }
-  .snapshots-layout{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2%;
-  }
-  .snap-card{
-    padding: 1%;
-    height: 100%;
-    border-radius: 5%;
-    text-align: center;
-    background-color: #334257;
-  }
-  .snap-card h2{
-    color: #fff;
-    font-weight: bold;
-  }
-  .snap-card h6{
-    color: #bbb;
-    font-weight: 100;
-    font-size: 75%;
-  }
-  .snap-card p{
-    color: #ccc;
-    padding: 3%;
-    text-align: justify;
-    font-size: 85%;
-  }
-  .snap-card img{
-    width: 40%;
-    margin: 5%;
-    border-radius: 50%;
-    border: 2px #fff solid;
-  }
-  
-  .tabcont{
-    display: grid;
-    gap: 5%;
-    position: relative;
-    grid-template-areas:'text grid';
-  }
-  
-  .tabcont .text{
-    width: 130%;
-    grid-area: text;
-  }
-  .tabcont  .grid{
-    width: 100%;
-    grid-area: grid;
-  }
-  
-  .text h3{
-    font-size: 150%;
-    padding: 1% 2% 2% 15%;
-    color: gray;
-  }
-  .text h1{
-    font-size: 250%;
-    font-weight: lighter;
-    padding: 1% 2% 2% 15%;
+
+  .events h1{
     color: #142230;
+    margin: 2% 0 2% 10%;
+    font-size: 200%;
   }
-  .text .marker{
-    width: 15%;
+
+  .events .marker{
+    width: 7%;
     height: 6px;
-    margin: 10% 0 0 15%;
+    margin: 4% 0 0 10%;
     padding: none;
     background-color: #0f4d92;
     color: #0f4d92;
   }
-  .text strong{
-    font-weight: 900;
-    font-size: 125%;
-  }
-  .text small{
-    font-weight: lighter;
-  }
-  
-  .text button{
-    background-color: #142230;
-    padding: 3%;
-    font-weight: bold;
-    cursor: pointer;
-    border: 1px solid #142230;
-    color: #fff;
-    transition: 0.3s;
-    width: 50%;
-    margin: 5% 2% 1% 15%;
-  }
-  
-  .text button:hover{
-    background-color: #334257;
-    border: 1px solid #334257;
-    color: #fff;
-  }
-  
-  .tabcont .grid{
+
+  .events-grid{
     width: 100%;
-    grid-area: grid;
-  }
-  
-  .tabgrid{
     display: grid;
-    width: 80%;
-    margin: 3% auto;
-    background-color: #fff;
-    text-align: center;
+    gap: 2%;
+    padding: 0 10%;
     grid-template-columns: repeat(3, 1fr);
-  
   }
-  
-  .tabcard{
+
+  .events-grid-card{
+    height: 350px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  }
+
+  .events-grid-card:hover{
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    cursor: pointer;
+    scale: 105%;
+    transition: 0.5s;
+  }
+
+  .events-grid-card img{
+    width:300px;
+  }
+
+  .events-grid-card h2{
+    font-size: 125%;
+    color: #142230;
+    margin: -10% 0 10% 0;
+
+  }
+
+  .testimonials{
     width: 100%;
-    border: 0.1px #eee solid;
-    padding: 20% 0 20% 0;
-    transition: 0.3s;
-    height: auto;
+    padding: 2%;
+    margin-top: 1%;
+    background-color: #142230;
   }
-  
-  .tabcard img{
-    width: 20%;
-    filter: invert(21%) sepia(95%) saturate(1238%) hue-rotate(190deg) brightness(94%) contrast(94%);
+
+  .tes-grid{
+    width: 100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding: 0% 10%;
+    grid-template-columns: repeat(4, 1fr);
   }
-  
-  .tabcard p{
-    line-height: 200%;
+
+  .testimonials h1{
+    color: #fff;
+    margin: 2% 0 1% 10%;
+    font-size: 200%;
   }
+
+  .testimonials .marker{
+    width: 7%;
+    height: 6px;
+    margin: 4% 0 0 10%;
+    padding: none;
+    background-color: #fff;
+    color: #fff;
+  }
+
+  .tes-card{
+    align-items: center;
+    padding: 20%;
+    text-align: center;
+  }
+  .tes-card h3{
+    color: #fff;
+    margin-top: 2%;
+    font-size: 200%;
+  }
+  .tes-card img{
+    width: 35%;
+    filter: invert(1);
+  }
+  .tes-card p{
+    color: #fff;
+    margin-top: 2%;
+  }
+
   
+
 
 
 /**********************************************************************
@@ -706,7 +477,7 @@
     .our-clients h1{
       color: #142230;
       margin: 2% 9% 2% 10%;
-      font-size: 200%;
+      font-size: 175%;
     }
     
  
@@ -765,79 +536,51 @@
       width: 150px;
     }
       
-    .stratergy{
+    .our-company{
+      display: block;
       width: 100%;
       background-color: #142230;
       height: auto;
       margin-bottom: 2%;
       padding: 2%;
     }
-    
-    .pointer-right {
-      width: 85%;
-      height: 40px;
-      margin: 4% 0% 4% 10%;
-      display: flex;
-      right: 0;
-      justify-content: center;
-      position: relative;
-      background: #fff;
+
+    .our-company .marker{
+      width: 20%;
+      height: 6px;
+      margin: 10% 0 7% 10%;
+      padding: none;
+      background-color: #fff;
+      color: #fff;
     }
     
-    .pointer-right:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 0;
-      border-left: 20px solid #142230;
-      border-top: 20px solid transparent;
-      border-bottom: 20px solid transparent;
+    .our-company h1{
+      color: #fff;
+      font-weight: bold;
+      margin: 2% 0 2% 10%;
+      font-size: 175%;
     }
-    .pointer-right:before {
-      content: "";
-      position: absolute;
-      right: -20px;
-      bottom: 0;
-      width: 0;
-      height: 0;
-      border-left: 20px solid #fff;
-      border-top: 20px solid transparent;
-      border-bottom: 20px solid transparent;
-    }
-    .pointer-right h2{
-      color: #142230;
-      margin-top: 5%;
-    }
+
     .pointer-cont{
       width: auto;
       color: #142230;
       margin: -2% 10% 4% 10%;
     }
     .pointer {
-      width: 85%;
+      width: 90%;
       height: 40px;
+      margin-bottom: 5%;
       display: flex;
-      justify-content: center;
+      justify-content: left;
       position: relative;
       background: #fff;
     }
     .pointer h2{
       color: #142230;
-      margin-top: 5%;
+      margin-top: 4%;
+      font-weight: bold;
     }
-    .pointer:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 0;
-      /* border-left: 20px solid #142230;
-      border-top: 20px solid transparent;
-      border-bottom: 20px solid transparent; */
-    }
+
     .pointer:before {
       content: "";
       position: absolute;
@@ -850,38 +593,21 @@
       border-bottom: 20px solid transparent;
     }
     
-    .whatwedo{
+    .events{
       width: 100%;
       padding: 2%;
-      margin-top: -5%;
+      margin-top: 1%;
+      background-color: #fff;
     }
-    .whatwedo-cont{
-      display: block;
-      align-items: center;
-      width: 100%;
-    }
-    .whatwedo-img{
-      display: none;
-    }
-    .whatwedo-text{
-      width: 100%;
-    }
-    
-    .whatwedo-text p{
+  
+    .events h1{
       color: #142230;
-      margin: 0 5% 2% 10%;
-      font-size: 120%;
-      line-height: 150%;
-
+      font-weight: bold;
+      margin: 2% 0 2% 10%;
+      font-size: 175%;
     }
-    
-    .whatwedo-text h1{
-      color: #142230;
-      margin: 2% 0 0% 10%;
-      font-size: 200%;
-    }
-    
-    .whatwedo-text .marker{
+  
+    .events .marker{
       width: 20%;
       height: 6px;
       margin: 10% 0 7% 10%;
@@ -889,265 +615,94 @@
       background-color: #0f4d92;
       color: #0f4d92;
     }
-    
-    .whatwedo-text button{
-      /* color: #fff;
-      background-color: #142230;
-      border: #142230 2px solid;
-      margin: 5% 0 5% 10%;
-      padding: 2.5%;
-      transition: 0.3s;
-      font-weight: bold;
-      width: 40%; */
-      background-color: #142230;
-      padding: 4%;
-      font-weight: bold;
-      margin: 5% 0 5% 10%;
-      border: 1px solid #142230;
-      color: #fff;
-      transition: 0.3s;
-      width: 50%;
-    }
-    
-    .whatwedo-text button:hover{
-      color: #fff;
-      background-color: hsl(215, 26%, 27%);
-      border: #334257 2px solid;
-    }
-    
-    .home-layout {
-      display: block;
-      background-color: #142230;
-      padding: 2%;
-    }
-    .home-layout img{
-      display: none;
-    }
-    .home-layout .marker{
-      width: 20%;
-      height: 6px;
-      margin: 10% 0 7% 10%;
-      padding: none;
-      background-color: #fff;
-      color: #fff;
-    }
   
-    .home-layout p{
-      margin: 2% 0 2% 10%;
-      font-size: 150%;
-      color: #fff;
-    
-    }
-    
-    .home-layout h1{
-      color: #fff;
-      font-weight: bold;
-      margin: 2% 0 2% 10%;
-      font-size: 200%;
-    }
-    
-    .snapshots{
+    .events-grid{
       width: 100%;
-      padding: 2%;
-      position: relative;
-      background-color: #142230;
-    }
-    
-    .snapshots h1{
-      color: #fff;
-      margin: 8% 0 -6% 10%;
-      font-size: 150%;
-    }
-    
-    .snapshots .marker{
-      width: 20%;
-      height: 6px;
-      margin: 10% 0 4% 10%;
-      padding: none;
-      background-color: #fff;
-      color: #fff;
-    }
-    
-    .snapshots-layout{
-      width: 80%;
-      margin: -2% auto 0% auto;
-      display: block;
-      padding-bottom: 20%;
-      clear: both;
-      height: auto;
+      padding: 0 5% 20% 5%;
+      display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
-    
-    .snap-card{
-      padding: 1%;
-      height: 325px;
-      margin-top: 10%;
-      border-radius: 5%;
+  
+    .events-grid-card{
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
       text-align: center;
-      background-color: #334257;
-    }
-    .snap-card h2{
-      color: #fff;
-      font-weight: bold;
-    }
-    
-    .snap-card h6{
-      color: #bbb;
-      font-weight: 100;
-      font-size: 75%;
-    }
-    
-    .snap-card p{
-      color: #ccc;
-      padding: 3%;
-      text-align: justify;
-      font-size: 85%;
-    }
-    .snap-card img{
-      width: 35%;
-      margin: 5%;
-      border-radius: 50%;
-      border: 2px #fff solid;
-    }
-    .snap-prev, .snap-next {
-      position: absolute;
-      top: 60%;
-      display: block;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: #bbb;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    .snap-next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    .snap-prev {
-      margin-left: -2%;
+      align-items: center;
+      box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
     }
   
-    .snap-dot {
-      height: 7px;
-      width: 7px;
-      margin: 0 0.5% 0 0.5%;
-      background-color: gray;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
+    .events-grid-card:hover{
+      box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+      cursor: pointer;
+      scale: 105%;
+      transition: 0.5s;
     }
-    .snap-dot-container{
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 30px;
-      margin: 0 auto;
-      width: 96%;
-      display: block;
-      text-align: center;
+  
+    .events-grid-card img{
+      width:100%;
     }
-    .active {
-      background-color: #fff;
-    }
-    
-    
-    .tabcont{
-      display: grid;
-      gap: 5%;
-      position: relative;
-      grid-template-areas:'text'
-                          'grid';
-    }
-    
-    .tabcont .text{
-      width: 100%;
-      text-align: center;
-      grid-area: text;
-    }
-    .tabcont .grid{
-      width: 100%;
-      margin-top: -10%;
-      grid-area: grid;
-    }
-    
-    .text h3{
-      font-size: 150%;
-      padding: 1% 2% 2% 2%;
-      color: gray;
-    }
-    .text h1{
-      font-size: 250%;
-      font-weight: lighter;
-      padding: 1% 2% 2% 2%;
+  
+    .events-grid-card h2{
+      font-size: 125%;
+      margin: -10% 0 10% 0;
       color: #142230;
     }
-    .text .marker{
-      width: 20%;
-      height: 6px;
-      margin: 10% 0 0 10%;
-      padding: none;
-      background-color: #0f4d92;
-      color: #0f4d92;
-    }
-    .text strong{
-      font-weight: 900;
-      font-size: 125%;
-    }
-    .text small{
-      font-weight: lighter;
-    }
-    
-    .text button{
-      background-color: #142230;
-      padding: 4%;
-      font-weight: bold;
-      margin: 10% auto;
-      border: 1px solid #142230;
-      color: #fff;
-      transition: 0.3s;
-      width: 50%;
-    }
-    
-    .text button:hover{
-      background-color: #334257;
-      border: 1px solid #334257;
-      color: #fff;
-    }
-    
-    
-    .tabgrid{
-      display: grid;
-      width: 90%;
-      margin: -3% auto 20% auto;
-      background-color: #fff;
-      text-align: center;
-      grid-template-columns: repeat(2, 1fr);
-    
-    }
-    
-    .tabcard{
+  
+    .testimonials{
       width: 100%;
-      border: 0.1px #eee solid;
-      padding: 20% 0 20% 0;
-      transition: 0.3s;
-      height: auto;
+      padding: 2%;
+      margin-top: 1%;
+      background-color: #142230;
     }
   
-    .tabcard img{
+    .tes-grid{
+      width: 100%;
+      display: grid;
+      text-align: center;
+      align-items: center;
+      padding: 0% 10% 10% 10%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .testimonials h1{
+      color: #fff;
+      font-weight: bold;
+      margin: 2% 0 2% 10%;
+      font-size: 175%;
+    }
+  
+    .testimonials .marker{
       width: 20%;
+      height: 6px;
+      margin: 10% 0 7% 10%;
+      padding: none;
+      background-color: #fff;
+      color: #fff;
+    }
+  
+    .tes-card{
+      align-items: center;
+      padding: 10%;
+      background-color: #fff;
+      text-align: center;
+    }
+    .tes-card h3{
+      color: #142230;
+      margin-top: 2%;
+      font-size: 125%;
+    }
+    .tes-card img{
+      width: 25%;
       filter: invert(21%) sepia(95%) saturate(1238%) hue-rotate(190deg) brightness(94%) contrast(94%);
     }
-    .tabcard h2{
+    .tes-card p{
+      color: #142230;
       font-size: 80%;
+      margin-top: 2%;
     }
+  
     
-    .tabcard p{
-      line-height: 200%;
-      font-size: 60%;
-    }
 
   }
   

@@ -1,0 +1,434 @@
+
+
+/* Content */
+
+.content{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.content .keep{
+  font-size: 200%;
+  font-weight: normal;
+  padding: 0% 2% 2% 5%;
+  color: #334257;
+}
+.content strong{
+  color: #0f4d92;
+}
+
+
+
+/* Address */
+
+.address{
+  width: 100%;
+  padding: 2%;
+  height: auto;
+}
+.address h1{
+  font-size: 150%;
+  font-weight: 100;
+  padding: 1% 2% 2% 5%;
+  color: gray;
+}
+
+
+
+/* Address Layout */
+
+.address-layout{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+.address-card{
+  padding: 6%;
+  height: auto;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  border-radius: 5px;
+  background-image: linear-gradient(#142230, #334257);
+}
+.address-card h2{
+  color: #fff;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-size: 110%;
+}
+.address-card p{
+  color: #fff;
+  line-height: 150%;
+}
+.rating-star{
+  color: #fff;
+  display: inline;
+}
+.rating-star h3{
+  color: #fff;
+  font-weight: bold;
+  font-size: 105%;
+  float: left;
+  line-height: 100%;
+}
+.rating-star ul li{
+  display: inline;
+}
+.imgdiv{
+  background-color: rgba(255,255,255,0.1);
+  transition: 0.3s;
+  float: right;
+  width: 80px;
+  cursor: pointer;
+  margin: 2%;
+  padding: 2.5% 0 2.5% 0;
+  align-items: center;
+  text-align: center;
+}
+.imgdiv-res{
+  display: none;
+}
+.imgdiv:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+.imgdiv i{
+  color: white;
+  margin-bottom: 5px;
+}
+.imgdiv p{
+  font-size: 70%;
+  line-height: 150%;
+}
+.address-card button{
+  float: right;
+  color: #fff;
+  height: 45px;
+  font-weight: bold;
+  background-color: #334257;
+  border: #fff solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: -7% 2% 0 0;
+  width: 35%;
+}
+.address-card button i{
+  transform: rotateY(180deg);
+}
+.address-card button:hover{
+  color: #142230;
+  background-color: white;
+}
+
+
+
+/* Contact Form */
+
+.contact-form{
+  width: 90%;
+  margin: 1% auto;
+  position: relative;
+  height: auto;
+}
+.contact-form input{
+  width: 48%;
+  float: left;
+  background-color: whitesmoke;
+  border: none;
+  padding: 0 1% 0 1%;
+  margin: 1% 1% 2% 1%;
+  text-align: top;
+  height: 55px;
+}
+.contact-form button{
+  width: 25%;
+  font-size: 100%;
+  background-color: #142230;
+  margin: 1% 1% 2% 1%;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1.5%;
+  transition: 0.3s;
+  resize: none;
+}
+.contact-form button:hover{
+  background-color: #334257;
+  color: #fff;
+}
+.contact-form textarea{
+  width: 98%;
+  height: 150px;
+  background-color: whitesmoke;
+  border: none;
+  font-size: 100%;
+  padding: 1%;
+  margin: 1% 1% 2% 1%;
+  resize: none;
+}
+
+
+
+/* Popup Dialogs */
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.popup{
+  margin: 15% auto;
+  text-align: center;
+  color: #fff;
+  width: 35%;
+  border-radius: 5px;
+  border-bottom: 3px solid #53BDED;
+  background-color: #142230;
+  height: 250px;
+  position: relative;
+}
+.popup img{
+  height: 200px;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 200%;
+  text-decoration: none;
+}
+.popup .close:hover {
+  color: rgb(255, 123, 123);
+  cursor: pointer;
+}
+
+/**********************************************************************
+RESPONSIVE
+**********************************************************************/
+
+@media screen and (max-width: 420px) {
+ 
+    *{
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+  .content .keep{
+    font-size: 140%;
+    font-weight: normal;
+    padding: 0% 2% 2% 5%;
+    margin-bottom: 5%;
+    color: #334257;
+  }
+  .content strong{
+    color: #0f4d92;
+  }
+  
+  /* Address */
+  
+  .address{
+    width: 100%;
+    padding: 2%;
+    height: auto;
+  }
+  .address h1{
+    font-size: 100%;
+    font-weight: 100;
+    padding: 1% 2% 2% 5%;
+    color: gray;
+  }
+  
+  
+  
+  /* Address Layout */
+  
+  .address-layout{
+    width: 90%;
+    margin-bottom: -10%;
+    margin: auto;
+    display: block;
+  }
+  .address-card{
+    padding: 6%;
+    height: 200px;
+    margin-top: -7%;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    background-image: linear-gradient(#142230, #334257);
+  }
+  .address-card h2{
+    color: #fff;
+    width: 100%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .address-card p{
+    color: #fff;
+    font-size: 85%;
+    line-height: 150%;
+  }
+  .rating-star{
+    display: none;
+  }
+  .rating-star h3{
+    display: none;
+  }
+  .rating-star ul li{
+    display: none;
+  }
+  #number{
+    display: none;
+  }
+  .imgdiv-res{
+    background-color: rgba(255,255,255,0.1);
+    transition: 0.3s;
+    width: 70px;
+    display: block;
+    margin: -5% 5% 0 0%;
+    float: left;
+    padding: 2.5% 0 2.5% 0;
+    align-items: center;
+    text-align: center;
+  }
+  .imgdiv{
+    display: none;
+  }
+  .imgdiv-res:hover{
+    background-color: rgba(255,255,255,0.2);
+  }
+  .imgdiv-res i{
+    color: white;
+    margin-bottom: 5px;
+  }
+  .imgdiv-res p{
+    font-size: 70%;
+    line-height: 150%;
+  }
+  .address-card button{
+    float: right;
+    color: #fff;
+    height: 35px;
+    font-weight: bold;
+    background-color: #334257;
+    border: #fff solid 1px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: -1% 0% 0 -7%;
+    width: 40%;
+    font-size: 90%;
+  }
+  .address-card button i{
+    transform: rotateY(180deg);
+  }
+  .address-card button:hover{
+    color: #142230;
+    background-color: white;
+  }
+  
+  
+  
+  /* Contact Form */
+  
+  .contact-form{
+    width: 90%;
+    margin: 1% auto;
+    position: relative;
+    height: auto;
+  }
+  .contact-form input{
+    width: 98%;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 90%;
+    padding: 2%;
+    margin: 1% 1% 2% 1%;
+    height: 45px;
+  }
+  .contact-form button{
+    width: 98%;
+    font-size: 90%;
+    background-color: #142230;
+    margin: 3% 1% 2% 1%;
+    color: #fff;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    padding: 1.5%;
+    transition: 0.3s;
+    resize: none;
+  }
+  .contact-form button:hover{
+    background-color: #334257;
+    color: #fff;
+  }
+  .contact-form textarea{
+    width: 98%;
+    font-size: 90%;
+    height: 120px;
+    background-color: whitesmoke;
+    border: none;
+    padding: 4% 2% 2% 2%;
+    margin: 1% 1% 2% 1%;
+    resize: none;
+  }
+  
+  
+  
+  /* Popup Dialogs */
+  
+  .overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .popup{
+    margin: 45% auto;
+    text-align: center;
+    color: #fff;
+    width: 70%;
+    border-radius: 5px;
+    border-bottom: 3px solid #53BDED;
+    background-color: #142230;
+    height: 200px;
+    position: relative;
+  }
+  .popup img{
+    height: 130px;
+  }
+  .popup h1{
+    font-size: 90%;
+  }
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 200%;
+    text-decoration: none;
+  }
+  .popup .close:hover {
+    color: rgb(255, 123, 123);
+  }
+    
+}

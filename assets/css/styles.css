@@ -137,10 +137,11 @@ strong{
 .menu-items:hover{
   color: #53BDED;
 }
+
 .menu-items-active{
   color: #53BDED;
   cursor: pointer;
-  width: 125px;
+  width: auto;
   font-weight: bold;
   transition: 0.3s;
   letter-spacing: 1px;

@@ -542,7 +542,7 @@
       background-color: #142230;
       height: auto;
       margin-bottom: 2%;
-      padding: 2%;
+      padding: 2% 0 7% 0;
     }
 
     .our-company .marker{
@@ -683,7 +683,7 @@
   
     .tes-card{
       align-items: center;
-      padding: 10%;
+      padding: 5%;
       background-color: #fff;
       text-align: center;
     }

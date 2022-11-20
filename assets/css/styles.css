@@ -421,6 +421,9 @@ RESPONSIVE MENU
   color: #0f4d92;
 }
 .responsive-menu-active{
+  color: #0f4d92;
+}
+.responsive-menu-dummy{
   color: #fff;
 }
 

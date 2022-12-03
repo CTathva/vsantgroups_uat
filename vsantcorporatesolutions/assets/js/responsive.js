@@ -1,5 +1,15 @@
 let slideIndex = 1;
 let snapslideIndex = 1;
+var timerHandle, timerSnapHandle;
+
+function resetTimer() {
+  window.clearTimeout(timerHandle);
+  timerHandle = setTimeout(carousel, 7000); 
+}
+function resetSnapTimer() {
+  window.clearTimeout(timerSnapHandle);
+  timerSnapHandle = setTimeout(snapcarousel, 7000); 
+}
 
 function myFunction(a) {
   var btn = document.getElementById('responsive-menu');
@@ -36,9 +46,11 @@ function myFunction(a) {
   
 }
 
+
+
 function plusSlides(n) {
-  console.log('pressed');
   showSlides(slideIndex += n);
+  resetTimer();
 }
 function showSlides(n) {
   let i;
@@ -57,16 +69,19 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  // slides[slideIndex-1].addEventListener('click',);
   dots[slideIndex-1].className += " active";
 }
 function carousel() {
   showSlides(slideIndex += 1);
-  setTimeout(carousel, 7000); 
+  timerHandle = setTimeout(carousel, 7000); 
 }
+
+
 
 function snapplusSlides(n) {
   snapshowSlides(snapslideIndex += n);
+  resetSnapTimer();
+
 }
 function snapshowSlides(n) {
   let i;
@@ -89,72 +104,23 @@ function snapshowSlides(n) {
 }
 function snapcarousel() {
   snapshowSlides(snapslideIndex += 1);
-  setTimeout(snapcarousel, 10000); 
+  timerSnapHandle = setTimeout(snapcarousel, 7000); 
 }
 
 
 window.onload = function(){ 
+  
   var sli = document.getElementsByClassName("mySlides");
   sli[slideIndex-1].style.display ='block';
   showSlides(1);
-
-
-  let sleep = ms => {  
-    return new Promise(resolve => setTimeout(resolve, ms));  
-  };  
-  sleep(7000).then(() => {  
-   carousel();
-  });
+  timerHandle = setTimeout(carousel,7000);
 
   var x = window.matchMedia("(max-width: 420px)")
   if(x.matches===true){
-    
     snapshowSlides(1);
-    
-    let snapsleep = ms => {  
-      return new Promise(resolve => setTimeout(resolve, ms));  
-    };  
-    snapsleep(10000).then(() => {  
-      snapcarousel();
-    });
-
+    timerSnapHandle = setTimeout(snapcarousel,7000);
   }
 
 }
 
-function changeAbout(n){
-  var ab = document.getElementById('ab');
-  var we = document.getElementById('we');
-  var om = document.getElementById('om');
-  var about = document.getElementById('about');
-  var whatwe = document.getElementById('whatwe');
-  var miss = document.getElementById('mission');
-
-  if (n === 1){
-    about.style.display ='grid';
-    whatwe.style.display ='none';
-    miss.style.display ='none';
-    ab.classList.add("active");
-    we.classList.remove("active");
-    om.classList.remove("active");
-  }
-  else if (n === 2){
-    about.style.display ='none';
-    whatwe.style.display ='grid';
-    miss.style.display ='none';
-    ab.classList.remove("active");
-    we.classList.add("active");
-    om.classList.remove("active");
-
-  }
-  else if (n === 3){
-    about.style.display ='none';
-    whatwe.style.display ='none';
-    miss.style.display ='grid';
-    ab.classList.remove("active");
-    we.classList.remove("active");
-    om.classList.add("active");
-
-  }
-}
 

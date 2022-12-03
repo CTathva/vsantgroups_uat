@@ -1,0 +1,245 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  font-size: 100%;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+
+.header{
+  width: 100%;
+  padding: 1%;
+  height: 90px;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+}
+.header-identity {
+  width: 25%;
+  z-index: 500;
+  display: flex;
+  height: 90px;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  margin-left: -3%;
+  transform: skew(-30deg);
+  background: white;
+}
+
+.logo{
+  margin-left: 25%;
+  margin-top: 3%;
+  transform: skew(30deg);
+  height: 75%;
+  cursor: pointer;
+}
+.heading{
+  color:#334257; 
+  margin-top: 4%;
+  margin-left: 7%;
+  letter-spacing: 2px;
+  font-size: 180%;
+  font-weight: 900;
+  transform: skew(30deg);
+  cursor: pointer;
+}
+.tagline{
+  color:#334257; 
+  font-weight: bold;
+  margin-top: 14%;
+  margin-left: -29%;
+  font-size: 140%;
+  transform: skew(30deg);
+  cursor: pointer;
+}
+.horizontal{
+  overflow: hidden;
+  width: 45%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: skew(-30deg);
+  margin-top: -3%;
+  height: 70px;
+  text-align: center;
+  background-color: #142230;
+}
+
+.horizontal  *{
+  color: #fff;
+  font-size: 100%;
+  display: inline-block;
+  transform: skew(30deg);
+  margin: 5% 1% 3% 0%;
+}
+.container{
+  padding: 2%;
+}
+.container p{
+  text-align: justify;
+  color: #142230;
+  font-size: 90%;
+}
+
+.footer {
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  padding: 3%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.footer-identity-heading{
+  color:#53BDED;
+  cursor: pointer;
+  margin-left: -5%;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.footer-logo{
+  width: 40%;
+  cursor: pointer;
+}
+.copyright{
+  font-size: 75%;
+  right: 0;
+  margin-right: 5%;
+  position: absolute;
+  color: #999;
+}
+
+/**********************************************************************
+RESPONSIVE
+**********************************************************************/
+
+@media screen and (max-width: 420px) {
+    *{
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+  .header{
+    width: 100%;
+    padding: 1%;
+    height: 70px;
+    display: flex;
+    cursor: default;
+    z-index: 100;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+
+  .header-identity {
+    width: 55%;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    z-index: 500;
+    display: flex;
+    height: 65px;
+    cursor: default;
+    margin-top: -10px;
+    margin-left: -13%;
+    transform: skew(-30deg);
+    background: white;
+  }
+
+
+  .heading{
+    color:#142230; 
+    margin-top: 5%;
+    margin-left: 5%;
+    letter-spacing: 2px;
+    cursor: default;
+    font-size: 130%;
+    font-weight: 900;
+    transform: skew(30deg);
+  }
+  .tagline{
+    color:#142230; 
+    font-weight: bold;
+    margin-top: 17%;
+    cursor: default;
+    margin-left: -36%;
+    font-size: 100%;
+    transform: skew(30deg);
+  }
+
+  .logo{
+    margin-left: 25%;
+    cursor: default;
+    margin-top: 4%;
+    transform: skew(30deg);
+    height: 75%;
+  }
+
+  .horizontal{
+    width: 65%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: skew(-30deg);
+    height: 50px;
+    margin-top: -10%;
+    margin-right: -14%;
+    text-align: center;
+    background-color: #142230;
+    overflow: hidden;
+  }
+  
+  .horizontal  *{
+    color: #fff;
+    font-size: 70%;
+    display: inline-block;
+    transform: skew(30deg);
+    margin: 9% 1% 3% 0%;
+  }
+  .container{
+    padding: 5%;
+  }
+  .container p{
+    text-align: justify;
+    color: #142230;
+    font-size: 90%;
+  }
+  
+  .footer {
+    background-color: #222222;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    padding: 3%;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  
+  .footer-identity-heading{
+    color:#53BDED;
+    cursor: pointer;
+    cursor: default;
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 90%;
+  }
+  
+  .footer-logo{
+    display: none;
+  }
+  .copyright{
+    font-size: 55%;
+    right: 0;
+    cursor: default;
+    margin-right: 5%;
+    position: absolute;
+    color: #999;
+  }
+    
+}

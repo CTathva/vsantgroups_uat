@@ -1,5 +1,12 @@
 let slideIndex = 1;
 let snapslideIndex = 1;
+var timerHandle;
+
+
+function resetTimer() {
+  window.clearTimeout(timerHandle);
+  timerHandle = setTimeout(carousel, 7000); 
+}
 
 function myFunction(a) {
   var btn = document.getElementById('responsive-menu');
@@ -36,9 +43,11 @@ function myFunction(a) {
   
 }
 
+
+
 function plusSlides(n) {
-  console.log('pressed');
   showSlides(slideIndex += n);
+  resetTimer();
 }
 function showSlides(n) {
   let i;
@@ -57,104 +66,18 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  // slides[slideIndex-1].addEventListener('click',);
   dots[slideIndex-1].className += " active";
 }
 function carousel() {
   showSlides(slideIndex += 1);
-  setTimeout(carousel, 7000); 
+  timerHandle = setTimeout(carousel, 7000); 
 }
-
-function snapplusSlides(n) {
-  snapshowSlides(snapslideIndex += n);
-}
-function snapshowSlides(n) {
-  let i;
-  let snapslides = document.getElementsByClassName("snap-card");
-  let snapdots = document.getElementsByClassName("snap-dot");
-  if (n > snapslides.length) {
-    snapslideIndex = 1
-  }    
-  if (n < 1) {
-    snapslideIndex = snapslides.length
-  }
-  for (i = 0; i < snapslides.length; i++) {
-    snapslides[i].style.display = "none";  
-  }
-  for (i = 0; i < snapdots.length; i++) {
-    snapdots[i].className = snapdots[i].className.replace(" active", "");
-  }
-  snapslides[snapslideIndex-1].style.display = "block";  
-  snapdots[snapslideIndex-1].className += " active";
-}
-function snapcarousel() {
-  snapshowSlides(snapslideIndex += 1);
-  setTimeout(snapcarousel, 10000); 
-}
-
 
 window.onload = function(){ 
   var sli = document.getElementsByClassName("mySlides");
   sli[slideIndex-1].style.display ='block';
   showSlides(1);
-
-
-  let sleep = ms => {  
-    return new Promise(resolve => setTimeout(resolve, ms));  
-  };  
-  sleep(7000).then(() => {  
-   carousel();
-  });
-
-  var x = window.matchMedia("(max-width: 420px)")
-  if(x.matches===true){
-    
-    snapshowSlides(1);
-    
-    let snapsleep = ms => {  
-      return new Promise(resolve => setTimeout(resolve, ms));  
-    };  
-    snapsleep(10000).then(() => {  
-      snapcarousel();
-    });
-
-  }
-
+  timerHandle = setTimeout(carousel,7000);
 }
 
-function changeAbout(n){
-  var ab = document.getElementById('ab');
-  var we = document.getElementById('we');
-  var om = document.getElementById('om');
-  var about = document.getElementById('about');
-  var whatwe = document.getElementById('whatwe');
-  var miss = document.getElementById('mission');
-
-  if (n === 1){
-    about.style.display ='grid';
-    whatwe.style.display ='none';
-    miss.style.display ='none';
-    ab.classList.add("active");
-    we.classList.remove("active");
-    om.classList.remove("active");
-  }
-  else if (n === 2){
-    about.style.display ='none';
-    whatwe.style.display ='grid';
-    miss.style.display ='none';
-    ab.classList.remove("active");
-    we.classList.add("active");
-    om.classList.remove("active");
-
-  }
-  else if (n === 3){
-    about.style.display ='none';
-    whatwe.style.display ='none';
-    miss.style.display ='grid';
-    ab.classList.remove("active");
-    we.classList.remove("active");
-    om.classList.add("active");
-
-  }
-}
 

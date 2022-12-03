@@ -123,12 +123,8 @@
   .active, .dot:hover {
     background-color: #fff;
   }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  
+
+
   .getin{
     width: 100%;
     padding: 2%;
@@ -403,34 +399,53 @@
   .snapshots-layout{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 2%;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2%;
   }
   .snap-card{
-    padding: 1%;
-    height: 100%;
-    border-radius: 5%;
-    text-align: center;
+    margin-bottom: 5%;
+    border-radius: 1%;
+    background-color: #fff;
+  }
+  .snap-card-back{
+    position: static;
+    display: inline-block;
+    height: 90px;
+    border-bottom-right-radius: 15%;
+    z-index: 90;
+    width: 100%;
     background-color: #334257;
   }
   .snap-card h2{
     color: #fff;
+    float: right;
+    margin: 10% 15% 0 0;
     font-weight: bold;
   }
   .snap-card h6{
-    color: #bbb;
+    color: #ccc;
+    float: right;
     font-weight: 100;
+    margin: -33% 15% 0 0;
     font-size: 75%;
   }
-  .snap-card p{
+  .snap-card i{
     color: #ccc;
+    font-size: 150%;
+    margin-top: -30%;
+  }
+  .snap-card p{
+    color: #142230;
     padding: 3%;
-    text-align: justify;
+    line-height: 150%;
+    text-align: left;
     font-size: 85%;
   }
   .snap-card img{
     width: 40%;
     margin: 5%;
+    z-index: 100;
     border-radius: 50%;
     border: 2px #fff solid;
   }
@@ -668,10 +683,6 @@
     }
     .active {
       background-color: #fff;
-    }
-    .fade {
-      animation-name: fade;
-      animation-duration: 1s;
     }
     .getin{
       width: 100%;
@@ -948,35 +959,28 @@
     }
     
     .snap-card{
-      padding: 1%;
       height: 325px;
       margin-top: 10%;
-      border-radius: 5%;
-      text-align: center;
-      background-color: #334257;
+      margin-bottom: 0%;
+      background-color: #fff;
     }
     .snap-card h2{
       color: #fff;
       font-weight: bold;
     }
-    
+
+    .snap-card-back{
+      height: 80px;
+      border-bottom-right-radius: 15%;
+    }
+
     .snap-card h6{
-      color: #bbb;
-      font-weight: 100;
-      font-size: 75%;
+      margin: -28% 15% 0 0;
     }
     
-    .snap-card p{
-      color: #ccc;
-      padding: 3%;
-      text-align: justify;
-      font-size: 85%;
-    }
     .snap-card img{
       width: 35%;
       margin: 5%;
-      border-radius: 50%;
-      border: 2px #fff solid;
     }
     .snap-prev, .snap-next {
       position: absolute;

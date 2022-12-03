@@ -130,11 +130,6 @@
   .active, .dot:hover {
     background-color: #fff;
   }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
   
   .our-clients{
     width: 100%;
@@ -462,10 +457,6 @@
     }
     .active {
       background-color: #fff;
-    }
-    .fade {
-      animation-name: fade;
-      animation-duration: 1s;
     }
     .our-clients{
       width: 100%;

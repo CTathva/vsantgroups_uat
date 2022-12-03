@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Us | VSANT Corporate Solutions</title>
+  <title>Contact Us | VSANT Groups</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" type="image/x-icon" href="assets/icon/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/contact_styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="assets/js/responsive.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -20,29 +20,33 @@
 
 <body>
 
-
   <div class="header">
-      <div class="header-identity">
-        <img class="logo" src="assets/image/logo512.png" >
-        <h1 class="heading">VSANT</h1><br><h2 class="tagline">Corporate Solutions</h2>
-      </div>
-      
+    <div class="header-identity">
+      <img onclick="window.location.href='index.html'" class="logo" src="assets/image/logo512.png" >
+      <h1 onclick="window.location.href='index.html'" class="heading"><strong>VSANT</strong> Groups</h1>
+    </div>
+    
 
-      <div class="horizontal">
-        <a title="VSANT Corporate Solutions" href="index.html" class="menu-items">Home</a>
-        <a title="About VSANT Corporate Solutions" href="about.html" class="menu-items">About Us</a>
-        <a title="Services we offer"href="services.html" class="menu-items">Services</a>
-        <a title="A glipms of the picturesque" href="contact.html" class="menu-items">Gallery</a>
-      </div>
+    <div class="horizontal">
+      <a href="./vsantcorporatesolutions/index.html" class="menu-items">VSANT Corporate Solutions</a>
+      <a>&emsp;</a>
+      <a href="./vsantindustries/index.html" class="menu-items">VSANT Industries</a>
+      <a>&emsp;&emsp;&emsp;</a>
+      <a href="contact.html" class="menu-items-active">Contact Us</a>
+    </div>
+
+    <img onclick="myFunction()" id="menu" class="ham-dark" src="assets/image/logos/more.png">
 
   </div>
+
+  <!-- RESPONSIVE MENU -->
+
   <div class="responsive-menu" id="responsive-menu">
     <ul>
-      <li class="responsive-list"><a class="responsive-menu-active">Home</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">About Us</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">Services</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">Gallery</a></li>
-      <li class="responsive-list"><a class="responsive-menu-list">Contact Us</a></li>
+      <li class="responsive-list"><a href="./vsantcorporatesolutions/index.html" class="responsive-menu-list">VSANT Corporate Solutions</a></li>
+      <li class="responsive-list"><a href="./vsantindustries/index.html" class="responsive-menu-list">VSANT Industries</a></li>
+      <li class="responsive-list"><a class="responsive-menu-dummy">Dummy</a></li>
+      <li class="responsive-list"><a href="contact.html" class="responsive-menu-active">Contact Us</a></li>
     </ul>
   </div>
 
@@ -50,135 +54,146 @@
     
     <div class="address">
       
-      <h1>Contact Us</h1>
+      <h1>CONTACT US</h1>
+      <h1 class="keep">Keep in Touch <strong>With VSANT</strong></h1>
+
+      <div class="contact-form">
+      
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbz7MbMguMac3Knpdn_z23uJ58-opka93MRi2Qn75lq_HPwrnTasf-rl2WMR4AbxHWt_eA/exec">
+          <input type="text" id="Name" name="Name" placeholder="&ensp; Your Name" required>
+          <input type="text" id="Place" name="Place" placeholder="&ensp; Place" required>
+          <input type="email" id="Email" name="Email" placeholder="&ensp; Email Address" required>
+          <input type="tel" id="Phone" name="Phone"  placeholder="&ensp; Phone Number" required>
+          <textarea id="Message" name="Message" placeholder="&ensp; Enter Message" rows="4" required></textarea>
+          <button title="Send Mail">SEND MAIL &emsp;&#10148;</button>
+        </form>
+  
+      </div>
+
+      <br><br>
+      <h1 class="keep">More ways to <strong>Reach Us</strong></h1>
+      <br>
 
       <div class="address-layout">
         
         <div class="address-card">
-          <img src="assets/image/location.png"/>
-          <h2>Address</h2>
-          <a href="https://www.google.com/maps/place/VSANT+Groups/@12.9882924,75.9163645,19z/data=!3m1!4b1!4m15!1m9!4m8!1m4!2m2!1d75.9811559!2d12.9857562!4e1!1m2!1m1!2sNo+4+Bikkod+Main+Road,+Taluk,+Madabalu,+Palya+Hobli,+Alur,+Karnataka+573218!3m4!1s0x3ba531f311b9de71:0xc4aa5300b895c5bd!8m2!3d12.9882911!4d75.9169117?hl=en">No 4,Madabalu Palya Hobli, Alur, Hassan 573218, Karnataka</a><br><br>
-        </div>
-        
-        <div class="address-card">
-          <img src="assets/image/call.png"/>
-          <h2>Cell Number</h2>
-          <a href="tel:+918431164749">+91 84311 64749</a><br>
-        </div>
-
-        <div class="address-card">
-          <img src="assets/image/email.png"/>
-          <h2>Email Support</h2>
-          <a href="mailto:vsantgroups@gmail.com">vsantgroups@gmail.com</a><br>
+          <div title="No 4, Madabalu, Palya Hobli, Alur, Hassan 573218, Karnataka" class="imgdiv" onclick="window.location.href='https://www.google.com/maps/place/VSANT+Groups/@12.9882924,75.9163645,19z/data=!3m1!4b1!4m15!1m9!4m8!1m4!2m2!1d75.9811559!2d12.9857562!4e1!1m2!1m1!2sNo+4+Bikkod+Main+Road,+Taluk,+Madabalu,+Palya+Hobli,+Alur,+Karnataka+573218!3m4!1s0x3ba531f311b9de71:0xc4aa5300b895c5bd!8m2!3d12.9882911!4d75.9169117?hl=en'">
+            <i class="fa fa-location-arrow"></i>
+            <p>Location</p>
+          </div>
+          <div title="vsantgroups@gmail.com" class="imgdiv" onclick="window.location.href='mailto:vsantgroups@gmail.com'">
+            <i class="fa fa-envelope"></i>
+            <p>Email</p>
+          </div>
+          <h2>VSANT Groups</h2>
+          <p>No 4, Madabalu,<br>Palya Hobli, Alur,<br>Hassan 573218, Karnataka</p><br><br>
+          <div class="rating-star">
+            <h3>4.5 &nbsp;</h3>
+            <ul>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half"></i></li>
+            </ul>
+          </div>
+          <p id="number">105 reviews</p>
+          <div title="No 4, Madabalu, Palya Hobli, Alur, Hassan 573218, Karnataka" class="imgdiv-res" onclick="window.location.href='https://www.google.com/maps/place/VSANT+Groups/@12.9882924,75.9163645,19z/data=!3m1!4b1!4m15!1m9!4m8!1m4!2m2!1d75.9811559!2d12.9857562!4e1!1m2!1m1!2sNo+4+Bikkod+Main+Road,+Taluk,+Madabalu,+Palya+Hobli,+Alur,+Karnataka+573218!3m4!1s0x3ba531f311b9de71:0xc4aa5300b895c5bd!8m2!3d12.9882911!4d75.9169117?hl=en'">
+            <i class="fa fa-location-arrow"></i>
+            <p>Location</p>
+          </div>
+          <div title="vsantgroups@gmail.com" class="imgdiv-res" onclick="window.location.href='mailto:vsantgroups@gmail.com'">
+            <i class="fa fa-envelope"></i>
+            <p>Email</p>
+          </div>
+          <button title="Call Us" onclick="window.location.href='tel:+918431164749'"><i class="fa fa-phone"></i>&emsp;Call Us</button>
         </div>
 
       </div>
 
     </div>
 
-    <br><br>
-
-    <h1 class="have">Write to Us</h1>
-
-    <div class="contact-form">
-      
-      <form method="POST" action="https://script.google.com/macros/s/AKfycbxFfdS7yp8ipNjCvnIUeuYrr1d7rQAz44dnHKg___hOZyfXJ27W-sdvCa_B_GF2nQpq/exec">
-        <label>Name</label><br>
-        <input type="text" id="name" name="name" placeholder="&ensp; Enter Name" required>
-        <label>Email Address</label><br>
-        <input type="email" id="email" name="email" placeholder="&ensp; Enter Email Address" required>
-        <p>We'll never share your email with anyone else.</p>
-        <label>Mobile Number</label><br>
-        <input type="tel" id="phone" name="phone"  placeholder="&ensp; Enter Mobile Number" required>
-        <label>Message</label><br>
-        <textarea id="message" name="message" placeholder=" Enter Message" rows="4" required></textarea>
-        <button>Submit</button>
-      </form>
-
-    </div>
-
-    <br><br>
-
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.9357121385395!2d75.91636452916225!3d12.988292406221992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba531f311b9de71%3A0xc4aa5300b895c5bd!2sVSANT%20Groups!5e0!3m2!1sen!2sin!4v1661407700036!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
-
+  <br><br>
   <div class="footer">
 
     <div class="grid_layout">
-
       <div class="footer-identity">
-
-        <div class="footer-identity-wrapper">
-          <a href="../index.html"><img class="footer-logo" src="assets/image/logo512.png" ></a>
-          <a class="footer-identity-heading" href="../index.html">VSANT Groups</a>
-        </div>
-        
-        <br><br>
-        <a href="../terms.html"><div class="terms">Terms and Condition</div></a> 
-        <a href="../privacy.html"><div class="terms">Privacy Policy</div></a> <br>
-        <div class="copyright">Copyright &copy;<script>document.write(" "+new Date().getFullYear());</script> | Developed by Adithya
-    </div>  
-      </div>
+        <img onclick="window.location.href='index.html'" class="footer-logo" src="assets/image/logo512.png" >
+        <div class="footer-identity-heading" onclick="window.location.href='index.html'"><b>VSANT</b> Groups</div>
+    </div>
+    
+    <div class="footer-companies">
       
-      <div class="footer-companies">
-        
-        <a class="footer-heading">Our Companies</a><br><br>
-        
-        <ul>
-          <li class="list"><a href="index.html" class="footer-list">VSANT Corporate Solutions</a></li>
-          <li class="list"><a href="../index.html" class="footer-list">VSANT Industries</a></li>
-        </ul>
+      <a class="footer-heading">Our Companies</a><br><br>
       
+      <ul>
+        <li class="list"><a href="./vsantcorporatesolutions/index.html" class="footer-list">VSANT Corporate Solutions</a></li>
+        <li class="list"><a href="./vsantindustries/index.html" class="footer-list">VSANT Industries</a></li>
+      </ul>
+    
+    </div>
+
+    <div class="footer-address">
+      <a class="footer-heading">Connect with us</a><br><br>
+      <ul class="footer-social">
+        <li class="list"><a href="https://www.facebook.com/santhoshshetty008/" class="footer-social-list"><i class="fab fa-facebook" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://www.instagram.com/santhoshshetty008/" class="footer-social-list"><i class="fab fa-instagram" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://www.linkedin.com/in/adithya-h-shetty/" class="footer-social-list"><i class="fab fa-linkedin" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://wa.me/+918431164749" class="footer-social-list"><i class="fab fa-whatsapp" aria-hidden="true"></i>&emsp;&ensp;</a></li>
+        <li class="list"><a href="https://play.google.com/store/apps/details?id=com.vsant.corp" class="footer-social-list"><i class="fab fa-google-play" aria-hidden="true"></i></a></li>
+      </ul>
+      <br><br><br>
+      <ul>
+        <li class="list"><a href="https://www.google.com/maps/place/VSANT+Groups/@12.9882924,75.9163645,19z/data=!3m1!4b1!4m15!1m9!4m8!1m4!2m2!1d75.9811559!2d12.9857562!4e1!1m2!1m1!2sNo+4+Bikkod+Main+Road,+Taluk,+Madabalu,+Palya+Hobli,+Alur,+Karnataka+573218!3m4!1s0x3ba531f311b9de71:0xc4aa5300b895c5bd!8m2!3d12.9882911!4d75.9169117?hl=en" class="footer-list"><i class="fa fa-location-arrow" aria-hidden="true"></i>&emsp;No 4, Madabalu,<br>&emsp;&ensp;&ensp;Palya Hobli, Alur,<br>&emsp;&ensp;&ensp;Hassan 573218, Karnataka</a></li>
+        <li class="list"><a href="tel:+918431164749" class="footer-list"><i class="fa fa-phone" aria-hidden="true"></i>&emsp;+91 84311 64749</a></li>
+        <li class="list"><a href="mailto:vsantgroups@gmail.com" class="footer-list"><i class="fa fa-envelope" aria-hidden="true"></i>&emsp;vsantgroups@gmail.com</a></li>
+      </ul>
+
+    </div>
+
+
+
+    </div>
+    <br>
+    <div class="footer-bottom">
+      <div onclick="window.location.href='index.html'" class="groups">
+        <h1>vsantgroups.in</h1>
       </div>
-
-      <div class="footer-useful-links">
-        
-        <a class="footer-heading">Useful Links</a><br><br>
-        
-        <ul>
-          <li class="list"><a href="index.html" class="footer-list">Home</a></li>
-          <li class="list"><a href="about.html" class="footer-list">About Us</a></li>
-          <li class="list"><a href="services.html" class="footer-list">Services</a></li>
-          <li class="list"><a href="gallery.html" class="footer-list">Gallery</a></li>
-        </ul>
-      
+      <div class="copyright">Copyright &copy;<script>document.write(" "+new Date().getFullYear());</script> | Developed by Adithya</div> 
+      <div class="term-priv">
+        <div onclick="window.location.href='terms.html'" class="terms">Terms and Condition</div>
+        <span class="gap"></span>
+        <div onclick="window.location.href='privacy.html'" class="terms">Privacy Policy</div>
+        <span class="gap"></span>
+        <div onclick="window.location.href='tel:+919590774259'" class="terms">Support</div>
       </div>
-
-      <div class="footer-address">
-        <a class="footer-heading">Connect with us</a><br><br>
-        <ul class="footer-social">
-          <li class="list"><a class="footer-social-list"><i class="fab fa-facebook" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-instagram" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-linkedin" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-whatsapp" aria-hidden="true"></i>&emsp;&ensp;</a></li>
-          <li class="list"><a class="footer-social-list"><i class="fab fa-google-play" aria-hidden="true"></i></a></li>
-        </ul>
-
-      </div>
-
+      <div title="Move to top" onclick="window.scrollTo(0,0);" class="arrow">&#8593;</div>
     </div>
      
   </div>
 
+
+
   <div id="popup1" class="overlay">
     <div class="popup">
-      <a  onclick="document.getElementById('popup1').style.visibility = 'hidden'; document.getElementById('popup1').style.opacity = 0;" class="close">&times;</a>
-      <img src="assets/image/done.gif">
+      <a onclick="document.getElementById('popup1').style.visibility = 'hidden'; document.getElementById('popup1').style.opacity = 0;" class="close">&times;</a>
+      <img src="assets/image/animated/done.gif">
       <h1>Thank You for the response...!</h1>
     </div>
   </div>
 
   <div id="popup2" class="overlay">
     <div class="popup">
-      <img src="assets/image/loading.gif">
+      <img src="assets/image/animated/loading.gif">
       <h1>Submitting... Please Wait...!</h1>
     </div>
   </div>
 
   <div id="popup3" class="overlay">
     <div class="popup">
-      <a  onclick="document.getElementById('popup3').style.visibility = 'hidden'; document.getElementById('popup3').style.opacity = 0;" class="close">&times;</a>
-      <img src="assets/image/error.gif">
+      <a onclick="document.getElementById('popup3').style.visibility = 'hidden'; document.getElementById('popup3').style.opacity = 0;" class="close">&times;</a>
+      <img src="assets/image/animated/error.gif">
       <h1>Submission Failed... Please Try Again...!</h1>
     </div>
   </div>

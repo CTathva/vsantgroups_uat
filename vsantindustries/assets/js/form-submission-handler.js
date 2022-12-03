@@ -84,6 +84,13 @@
             var popup1=document.getElementById('popup1');
             popup1.style.opacity = 1;
             popup1.style.visibility='visible';
+            let sleep = ms => {  
+              return new Promise(resolve => setTimeout(resolve, ms));  
+            };  
+            sleep(2500).then(() => {  
+              popup1.style.opacity = 0;
+              popup1.style.visibility='hidden';  
+            }); 
           }
           else {
             var popup3=document.getElementById('popup2');
@@ -92,6 +99,13 @@
             var popup4=document.getElementById('popup3');
             popup4.style.opacity = 1;
             popup4.style.visibility='visible';
+            let sleep = ms => {  
+              return new Promise(resolve => setTimeout(resolve, ms));  
+            };  
+            sleep(5000).then(() => {  
+              popup4.style.opacity = 0;
+              popup4.style.visibility='hidden';  
+            }); 
           }
       };
       // url encode form data for sending as post data
@@ -117,3 +131,33 @@
       }
     }
   })();
+
+
+
+  window.onload = function(){ 
+    var event=location.search.split('event=')[1];
+    var skill=location.search.split('skill=')[1];
+    var box = document.getElementById('Message');
+    try{
+      event = event.replaceAll("%20", " ");
+    }
+    catch{
+      var url = 'contact.html';
+    }
+    try{
+      skill = skill.replaceAll("%20", " ");
+    }
+    catch{
+      var url = 'contact.html';
+    }
+    if(event === undefined && skill === undefined){
+      box.value = '';
+      console.log('value'+ skill+' '+event);
+    }
+    else if ( event === undefined && skill != null ){
+      box.value = "Hello,\n\nI am willing to enroll for the "+ skill+ " training. I would like to hear from you.\n\nThanks!";
+    }
+    else{
+      box.value = "Hello,\n\nWe am planning for a "+ event+ ". We request you to offer your service.\n\nThanks!";
+    }
+  }

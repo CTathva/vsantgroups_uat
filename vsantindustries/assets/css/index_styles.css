@@ -222,11 +222,6 @@
     border-bottom-right-radius: 10px;
     padding: 3px;
     z-index: 500;
-    position: absolute;
-    float: left;
-    margin-top: -205px; 
-    margin-left: -2px;
-
   }
 
   .blue {
@@ -443,18 +438,17 @@
     .events-grid{
       width: 100%;
       padding: 0 5% 20% 5%;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      display: block;
+      height: auto;
     }
   
     .events-grid-card{
       width: 100%;
-      margin-bottom: -15px;
+      margin-bottom: 20px;
     }
 
     .events-grid-card img{
       width:75%;
-      margin-top: 5%;
     }
   
     .events-grid-card h2{
@@ -496,7 +490,6 @@
     .events-grid-card-tag{
       width: 90px;
       font-size: 70%;
-      margin-top: -260px; 
       margin-left: 0px;
   
     }

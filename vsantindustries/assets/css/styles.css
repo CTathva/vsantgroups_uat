@@ -376,7 +376,7 @@ HEADER
   display: block;
 } */
 .header-identity {
-  width: 90%;
+  width: 93%;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
   z-index: 500;
   display: flex;

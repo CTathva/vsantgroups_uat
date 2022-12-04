@@ -38,11 +38,11 @@
             }
 
             function setCSS (device,orient){
-                if (device === 'T' && orient == 0) {loadcssfile('tablet-portrait.css'); document.getElementById('demo').innerHTML='tablet-portrait';}
-                else if (device === 'T' && orient == 90) {loadcssfile('tablet-landscape.css'); document.getElementById('demo').innerHTML='tablet-landscape';}
-                else if (device === 'M' && orient == 0) {loadcssfile('mobile-portrait.css'); document.getElementById('demo').innerHTML='mobile-portrait';}
-                else if (device === 'M' && orient == 90){ loadcssfile('mobile-landscape.css'); document.getElementById('demo').innerHTML='mobile-landscape';}
-                else {loadcssfile('desktop.css');document.getElementById('demo').innerHTML='desktop-landscape';}
+                if (device === 'T' && orient == 0) {loadcssfile('tablet-portrait.css'); document.getElementById('demo').innerHTML='tablet-portrait ' + orient;}
+                else if (device === 'T' && orient == 90) {loadcssfile('tablet-landscape.css'); document.getElementById('demo').innerHTML='tablet-landscape ' + orient;}
+                else if (device === 'M' && orient == 0) {loadcssfile('mobile-portrait.css'); document.getElementById('demo').innerHTML='mobile-portrait ' + orient;}
+                else if (device === 'M' && orient == 90){ loadcssfile('mobile-landscape.css'); document.getElementById('demo').innerHTML='mobile-landscape ' + orient;}
+                else {loadcssfile('desktop.css');document.getElementById('demo').innerHTML='desktop-landscape '+ orient +' '+ device;}
             }
 
             function check_Dev(){

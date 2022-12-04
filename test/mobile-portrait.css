@@ -1,0 +1,11 @@
+#demo{
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    color: black;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+body{
+    background-color: #e7dd53;
+}

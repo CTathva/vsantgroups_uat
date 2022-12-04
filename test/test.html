@@ -1,0 +1,68 @@
+<html>
+    <head>       
+    </head>
+    <body>
+        <h1 id="demo">This is a demo text</h1>
+        <script>
+            var device;
+            var orient;
+            window.onload = (event) => {
+                device = check_Dev();
+                orient = check_Orient();
+                setCSS (device,orient);
+            };
+
+            function check_Orient(){
+                if(window.innerHeight > window.innerWidth){
+                        return 0;
+                    }
+                    else{
+                        return 90;
+                    }
+            }
+
+            window.onorientationchange = (event) => {
+                setCSS (device,event.target.screen.orientation.angle);
+            };
+
+            function loadcssfile(filename){
+                var fileref=document.createElement("link");
+                fileref.setAttribute("rel", "stylesheet");
+                fileref.setAttribute("type", "text/css");
+                fileref.setAttribute("href", filename);
+                if (typeof fileref!="undefined")
+                    document.getElementsByTagName("head")[0].appendChild(fileref)
+                else{
+                    document.getElementsByTagName("head")[0].appendChild(fileref)
+                }
+            }
+
+            function setCSS (device,orient){
+                if (device === 'T' && orient == 0) {loadcssfile('tablet-portrait.css'); document.getElementById('demo').innerHTML='tablet-portrait';}
+                else if (device === 'T' && orient == 90) {loadcssfile('tablet-landscape.css'); document.getElementById('demo').innerHTML='tablet-landscape';}
+                else if (device === 'M' && orient == 0) {loadcssfile('mobile-portrait.css'); document.getElementById('demo').innerHTML='mobile-portrait';}
+                else if (device === 'M' && orient == 90){ loadcssfile('mobile-landscape.css'); document.getElementById('demo').innerHTML='mobile-landscape';}
+                else {loadcssfile('desktop.css');document.getElementById('demo').innerHTML='desktop-landscape';}
+            }
+
+            function check_Dev(){
+                const userAgent = navigator.userAgent.toLowerCase();
+                const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(userAgent);
+                
+                if (isTablet){
+                   return 'T';
+                }
+                else if (isMobile){
+                    return 'M';
+                }
+                else{
+                    return 'D';
+                }
+            }
+
+
+
+         </script>
+    </body>
+</html>

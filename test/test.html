@@ -42,8 +42,8 @@
                 else if (device === 'T' && (orient == 90 || orient == 270)) {loadcssfile('tablet-landscape.css'); document.getElementById('demo').innerHTML='tablet-landscape';}
                 else if (device === 'M' && orient == 0) {loadcssfile('mobile-portrait.css'); document.getElementById('demo').innerHTML='mobile-portrait';}
                 else if (device === 'M' && (orient == 90 || orient == 270)){ loadcssfile('mobile-landscape.css'); document.getElementById('demo').innerHTML='mobile-landscape';}
-                else {loadcssfile('desktop.css');document.getElementById('demo').innerHTML='desktop-landscape';}
-            }
+                else if (device === 'D' && orient == 0) {loadcssfile('desktop-portrait.css'); document.getElementById('demo').innerHTML='desktop-portrait';}
+                else if (device === 'D' && (orient == 90 || orient == 270)){ loadcssfile('desktop-landscape.css'); document.getElementById('demo').innerHTML='desktop-landscape';}            }
 
             function check_Dev(){
                 const userAgent = navigator.userAgent.toLowerCase();

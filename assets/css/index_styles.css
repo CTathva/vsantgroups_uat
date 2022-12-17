@@ -49,7 +49,7 @@
   .cap {
     color: #fff;
     font-size: 400%;
-    margin: 15% 0 0 10%;
+    margin: 15% 10% 0 10%;
     position: absolute;
     top: 8px;
     width: auto;
@@ -117,8 +117,9 @@
   .dot-container{
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: -50px;
     width: 100%;
+    margin-top: 5%;
     text-align: center;
   }
   .overlay-container{
@@ -158,52 +159,27 @@
     color: #0f4d92;
   }
 
-  .slider {
-  background: white;
+  .slider-layout {
+    width: 85%;
+    display: grid;
+    margin: 1% 0 0 10%;
+    grid-template-columns: repeat(5, 1fr);
+}
+.slider{
   height: 150px;
-  margin: auto;
-  margin-top: 3%;
-  overflow: hidden;
-  position: relative;
-  width: 90%;
+  width: 150px;
+  text-align: center;
+  border: 0.1px solid #eee;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .slider img{
-  width: 125px;
-  height: 125px;
+  margin-top: 22.5px;
+  width: 115px;
+  height: 115px;
 }
 
-.slider::before,
-.slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 150px;
-  position: absolute;
-  width: 150px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
-.slider .slide-track {
-  animation: scroll 30s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-
-.slider .slide {
-  height: 150px;
-  width: 300px;
-}
 
   .our-company{
     display: none;
@@ -212,7 +188,7 @@
   .events{
     width: 100%;
     padding: 2%;
-    margin-top: 1%;
+    margin-top: 5%;
     background-color: #fff;
   }
 
@@ -481,51 +457,27 @@
       color: #0f4d92;
     }
 
-    .slider {
-      background: white;
-      height: 150px;
-      margin: auto;
-      margin-top: 7%;
-      overflow: hidden;
-      position: relative;
-      width: 95%;
-    }
-    
-    .slider img{
-      width: 100px;
-      height: 100px;
-    }
-    .slider::before,
-    .slider::after {
-      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-      content: "";
-      height: 150px;
-      position: absolute;
-      width: 20px;
-      z-index: 2;
-    }
-    
-    .slider::after {
-      right: 0;
-      top: 0;
-      transform: rotateZ(180deg);
-    }
-    
-    .slider::before {
-      left: 0;
-      top: 0;
-    }
-    
-    .slider .slide-track {
-      animation: scroll 30s linear infinite;
-      display: flex;
-      width: calc(250px * 14);
-    }
-    
-    .slider .slide {
-      height: 150px;
-      width: 150px;
-    }
+    .slider-layout {
+      width: 80%;
+      display: grid;
+      margin: 5% 0 0 10%;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .slider{
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    border: 0.1px solid #eee;
+    margin-bottom: 3px;
+    align-items: center;
+  }
+  
+  .slider img{
+    margin-top: 25px;
+    width: 90px;
+    height: 90px;
+  }
+  
       
     .our-company{
       display: block;

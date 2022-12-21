@@ -171,8 +171,9 @@ display: none;
 FOOTER
 ====================================================================*/
 
-.footer {
-  background-color: #172337;
+.footer
+ {
+  background-color: #222222;
   width: 100%;
   height: auto;
   padding: 3%;
@@ -450,7 +451,7 @@ FOOTER
 ====================================================================*/
 
 .footer {
-background-color: #172337;
+background-color: #222222;
 width: 100%;
 height: auto;
 padding: 3%;

@@ -141,17 +141,7 @@
   text-align: top;
   height: 55px;
 }
-.contact-form select{
-  appearance: none;
-  width: 48%;
-  float: left;
-  background-color: red;
-  border: none;
-  padding: 0 1% 0 1%;
-  margin: 1% 1% 2% 1%;
-  text-align: top;
-  height: 55px;
-}
+
 .contact-form button{
   width: 25%;
   font-size: 100%;
@@ -180,6 +170,33 @@
   resize: none;
 }
 
+.custom-selects{
+  width: 48%;
+  float: left;
+  background-color: whitesmoke;
+  border: none;
+  padding: 0 1% 0 1%;
+  margin: 1% 1% 2% 1%;
+  text-align: top;
+  height: 55px;
+}
+
+.custom-selects select {
+  background-color: whitesmoke;
+  outline: none;
+  height: 55px;
+  width: 98%;
+  cursor: pointer;
+  color: gray;
+  line-height: 50px;
+  margin-left: 10px;
+  border: none;
+}
+.custom-selects option {
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
 
 
 /* Popup Dialogs */
@@ -397,6 +414,32 @@ RESPONSIVE
     resize: none;
   }
   
+  .custom-selects{
+    width: 98%;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 90%;
+    padding: 0%;
+    margin: 1% 1% 2% 1%;
+    height: 45px;
+  }
+  
+  .custom-selects select {
+    background-color: whitesmoke;
+    outline: none;
+    height: 45px;
+    width: 96%;
+    cursor: pointer;
+    color: gray;
+    line-height: 45px;
+    margin-left: 10px;
+    border: none;
+  }
+  .custom-selects option {
+    cursor: pointer;
+    font-size: 90%;
+    color: black;
+  }
   
   
   /* Popup Dialogs */

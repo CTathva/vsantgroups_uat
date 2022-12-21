@@ -197,7 +197,13 @@
   font-size: 16px;
   color: black;
 }
+.mobile-select{
+  display: none;
 
+}
+.desktop-select{
+  display: block;
+}
 
 /* Popup Dialogs */
 
@@ -440,7 +446,14 @@ RESPONSIVE
     font-size: 90%;
     color: black;
   }
-  
+
+  .mobile-select{
+    display: block;
+
+  }
+  .desktop-select{
+    display: none;
+  }
   
   /* Popup Dialogs */
   

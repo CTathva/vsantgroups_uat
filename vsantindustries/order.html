@@ -60,42 +60,70 @@
       <div class="contact-form">
       
         <form method="POST" action="https://script.google.com/macros/s/AKfycbyFnVsEZPiqjjgXuSesRwGZOWi1yn3Johz_mHeM46DpGzZz-2RTffbY-EW7zwub5gU/exec">
-          <div class="custom-selects">
-            <select name="Product" id="Product" required>
-              <option value="99" disabled></option>
-              <option selected disabled value="0" hidden>Select Product</option>
-              <option value="Roasted Coffee Powder">&ensp;Roasted Coffee Powder</option>
-              <option value="99" disabled></option>
-              <option value="Red Chilli Powder">&ensp;Red Chilli Powder</option>
-              <option value="99" disabled></option>
-              <option value="Corriander Powder">&ensp;Corriander Powder</option>
-              <option value="99" disabled></option>
-              <option value="Farm Fresh Rice Floor">&ensp;Farm Fresh Rice Floor</option>
-              <option value="99" disabled></option>
-              <option value="Farm Fresh Ragi Floor">&ensp;Farm Fresh Ragi Floor</option>
-              <option value="99" disabled></option>
-              <option value="Farm Fresh Mushroom">&ensp;Farm Fresh Mushroom</option>
-              <option value="99" disabled></option>
-            </select>
+          
+          <div class="mobile-select">
+            <div class="custom-selects">
+              <select name="Product" id="Product" required>
+                <option selected disabled value="0" hidden>Select Product</option>
+                <option value="Roasted Coffee Powder">&ensp;Roasted Coffee Powder</option>
+                <option value="Red Chilli Powder">&ensp;Red Chilli Powder</option>
+                <option value="Corriander Powder">&ensp;Corriander Powder</option>
+                <option value="Farm Fresh Rice Floor">&ensp;Farm Fresh Rice Floor</option>
+                <option value="Farm Fresh Ragi Floor">&ensp;Farm Fresh Ragi Floor</option>
+                <option value="Farm Fresh Mushroom">&ensp;Farm Fresh Mushroom</option>
+              </select>
+            </div>
+            <div class="custom-selects">
+              <select name="Qty" id="Qty" required>
+                <option selected disabled value="0" hidden>Select Quantity</option>
+                <option value="10 KG">&ensp;10 KG</option>
+                <option value="10 KG">&ensp;10 KG</option>
+                <option value="50 KG">&ensp;50 KG</option>
+                <option value="100 KG">&ensp;100 KG</option>
+                <option value="250 KG">&ensp;250 KG</option>
+                <option value="500 KG">&ensp;500 KG</option>
+              </select>
+            </div>
           </div>
-          <div class="custom-selects">
-            <select name="Qty" id="Qty" required>
-              <option value="99" disabled></option>
-              <option selected disabled value="0" hidden>Select Quantity</option>
-              <option value="10 KG">&ensp;10 KG</option>
-              <option value="99" disabled></option>
-              <option value="10 KG">&ensp;10 KG</option>
-              <option value="99" disabled></option>
-              <option value="50 KG">&ensp;50 KG</option>
-              <option value="99" disabled></option>
-              <option value="100 KG">&ensp;100 KG</option>
-              <option value="99" disabled></option>
-              <option value="250 KG">&ensp;250 KG</option>
-              <option value="99" disabled></option>
-              <option value="500 KG">&ensp;500 KG</option>
-              <option value="99" disabled></option>
-            </select>
+          <div class="desktop-select">
+            <div class="custom-selects">
+              <select name="Product" id="Product" required>
+                <option value="99" disabled></option>
+                <option selected disabled value="0" hidden>Select Product</option>
+                <option value="Roasted Coffee Powder">&ensp;Roasted Coffee Powder</option>
+                <option value="99" disabled></option>
+                <option value="Red Chilli Powder">&ensp;Red Chilli Powder</option>
+                <option value="99" disabled></option>
+                <option value="Corriander Powder">&ensp;Corriander Powder</option>
+                <option value="99" disabled></option>
+                <option value="Farm Fresh Rice Floor">&ensp;Farm Fresh Rice Floor</option>
+                <option value="99" disabled></option>
+                <option value="Farm Fresh Ragi Floor">&ensp;Farm Fresh Ragi Floor</option>
+                <option value="99" disabled></option>
+                <option value="Farm Fresh Mushroom">&ensp;Farm Fresh Mushroom</option>
+                <option value="99" disabled></option>
+              </select>
+            </div>
+            <div class="custom-selects">
+              <select name="Qty" id="Qty" required>
+                <option value="99" disabled></option>
+                <option selected disabled value="0" hidden>Select Quantity</option>
+                <option value="10 KG">&ensp;10 KG</option>
+                <option value="99" disabled></option>
+                <option value="10 KG">&ensp;10 KG</option>
+                <option value="99" disabled></option>
+                <option value="50 KG">&ensp;50 KG</option>
+                <option value="99" disabled></option>
+                <option value="100 KG">&ensp;100 KG</option>
+                <option value="99" disabled></option>
+                <option value="250 KG">&ensp;250 KG</option>
+                <option value="99" disabled></option>
+                <option value="500 KG">&ensp;500 KG</option>
+                <option value="99" disabled></option>
+              </select>
+            </div>
           </div>
+
           
           <input type="text" id="Name" name="Name" placeholder="&ensp; Your Name" required>
           <input type="text" id="Place" name="Place" placeholder="&ensp; Place" required>
